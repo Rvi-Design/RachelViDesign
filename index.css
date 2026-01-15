@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --ECE5EB: #ECE5EB;
+    --DDC6DA: #DDC6DA;
+    --B18AAB: #B18AAB;
+    --73406A: #73406A;
+    --785A73: #785A73;
+    --2F2F2F: #2F2F2F;
+
+    --boxShadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    --innerShadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
+
+    --Aboreto: "Aboreto",Verdana, sans-serif;
+    --Advent: "Advent Pro", Arial, sans-serif;
+    --Bellota: "Bellota", Helvetica, sans-serif;
+    --Cairo: "Cairo", Tahoma, sans-serif;
+    --Cinzel: "Cinzel Decorative", Times, serif;
+    --Comfortaa: "Comfortaa", Verdana, sans-serif;
+
+}
+/*--------------------------Tagline---------------------*/
+@keyframes taglineFade {
+    0% {opacity: 0%; transform: translateX(200px); }
+    40% {opacity: 0%;}
+    100% {opacity: 100%; transform: translateX(-100px);}
+}
+@keyframes bubbleFade {
+    0% {opacity: 0%; transform: scale(.75);}
+    100% {opacity: 100%;transform: scale(1);} 
+}
+
+#taglineLogo {
+    display: grid;
+    grid-template-columns: min-content 2fr;
+    grid-template-rows: min-content;
+    padding: 0 14%;
+}
+#bubbleLogo {
+    grid-column: 1/2;
+    height: 70%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    animation-name: bubbleFade;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+#taglineLogo h1 {
+    grid-column: 2/3;
+    font-family: var(--Comfortaa);
+    color: var(--73406A);
+    font-size: 3vw;
+    align-content: center;
+    padding: 0 0 0 1rem;
+    margin: 0;
+    animation-name: taglineFade;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+/*--------------------------About Me--------------------*/
+
+#aboutMe {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: min-content 2fr min-content;
+    padding: 0 10% 20% 10%;
+    row-gap: 1.5rem;
+}
+#aboutMe h2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+}
+
+
+#aboutArcContainer {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    position: relative;
+}
+
+#smallCircle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    scale: .75;
+    z-index: 2;
+    transform: translateY(0px);
+    transition: opacity 0.5s ease-in-out,
+                transform 0.5s ease-in-out;
+}
+#aboutArcContainer:hover  #smallCircle {
+   opacity: 1;
+   transform: scale(.7); 
+   transform: translateY(-30px);
+}
+#aboutMe p {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-family: var(--Bellota);
+  color: var(--2F2F2F);
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#aboutLinks {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+
