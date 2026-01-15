@@ -53,6 +53,11 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+section {
+    background-color: rgba(115, 64, 106, 0.10);
+    margin-bottom: 10%;
+}
 /*------------------Nav Bar-------------------*/
 nav {
    display: grid;

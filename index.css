@@ -67,7 +67,7 @@
     display: grid;
     grid-template-columns: min-content auto;
     grid-template-rows: min-content 2fr min-content;
-    padding: 0 10% 20% 10%;
+    padding: 0 10%;
     row-gap: 1.5rem;
 }
 #aboutMe h2 {
@@ -118,4 +118,34 @@
     list-style: none;
 }
 
+/*--------------------------Project Buttons--------------------*/
+#jumpLinks {
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+#jumpLinkContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 4%;
+}
+
+#jumpLinks a {
+  background-color: var(--B18AAB);
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: var(--Advent);
+  font-size: 3vw;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  align-content: center;
+  box-shadow: var(--boxShadow);
+  transition: background-color 0.25s ease-in-out;
+}
+
+#jumpLinks a:hover {
+    background-color: var(--73406A);
+}
 
