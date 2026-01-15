@@ -12,7 +12,7 @@
     --785A73: #785A73;
     --2F2F2F: #2F2F2F;
 
-    --boxShadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    --boxShadow: 4px 4px 4px 4px rgba(46, 24, 49, 0.25);
     --innerShadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
 
     --Aboreto: "Aboreto",Verdana, sans-serif;
@@ -38,6 +38,11 @@
     font-size: 3rem;
     text-align: right;
 }
+.catLeft {
+    font-family: var(--Aboreto);
+    color: var(--73406A);
+    font-size: 3rem;
+}
 
 .icon {
    fill: var(--73406A); 
@@ -58,6 +63,12 @@ section {
     background-color: rgba(115, 64, 106, 0.10);
     margin-bottom: 10%;
 }
+.inset {
+    background-color: rgba(115, 64, 106, 0.10);
+    box-shadow: var(--innerShadow);
+    border-radius: 10px;
+}
+
 /*------------------Nav Bar-------------------*/
 nav {
    display: grid;

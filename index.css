@@ -1,26 +1,4 @@
-*{
-    box-sizing: border-box;
-}
 
-:root {
-    --ECE5EB: #ECE5EB;
-    --DDC6DA: #DDC6DA;
-    --B18AAB: #B18AAB;
-    --73406A: #73406A;
-    --785A73: #785A73;
-    --2F2F2F: #2F2F2F;
-
-    --boxShadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
-    --innerShadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
-
-    --Aboreto: "Aboreto",Verdana, sans-serif;
-    --Advent: "Advent Pro", Arial, sans-serif;
-    --Bellota: "Bellota", Helvetica, sans-serif;
-    --Cairo: "Cairo", Tahoma, sans-serif;
-    --Cinzel: "Cinzel Decorative", Times, serif;
-    --Comfortaa: "Comfortaa", Verdana, sans-serif;
-
-}
 /*--------------------------Tagline---------------------*/
 @keyframes taglineFade {
     0% {opacity: 0%; transform: translateX(200px); }

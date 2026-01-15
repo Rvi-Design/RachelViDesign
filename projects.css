@@ -1,0 +1,86 @@
+:root {
+    --ECE5EB: #ECE5EB;
+    --DDC6DA: #DDC6DA;
+    --B18AAB: #B18AAB;
+    --73406A: #73406A;
+    --785A73: #785A73;
+    --2F2F2F: #2F2F2F;
+
+    --boxShadow: 4px 4px 4px 4px rgba(46, 24, 49, 0.25);
+    --innerShadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
+
+    --Aboreto: "Aboreto",Verdana, sans-serif;
+    --Advent: "Advent Pro", Arial, sans-serif;
+    --Bellota: "Bellota", Helvetica, sans-serif;
+    --Cairo: "Cairo", Tahoma, sans-serif;
+    --Cinzel: "Cinzel Decorative", Times, serif;
+    --Comfortaa: "Comfortaa", Verdana, sans-serif;
+
+}
+
+
+h2:first-of-type {
+    margin-right: 1rem;
+}
+button:first-of-type {
+    all: unset;
+    background-color: var(--B18AAB);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.25s ease-in-out;
+}
+
+button:first-of-type:hover {
+    background-color: var(--73406A);
+}
+
+/*--------------------------Websites--------------------*/
+.websiteContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content;
+}
+
+#trl{
+    filter: saturate(30%);
+    transition: filter .25s ease-in-out;
+    padding: 1.5rem;
+    grid-row: 1/2;
+}
+#wrfContainer {
+    align-content: center;
+}
+#wrf{
+    filter: saturate(30%);
+    transition: filter .25s ease-in-out;
+}
+.websiteContainer a {
+    text-align: center;
+    font-family: var(--Cairo);
+    color: white;
+    font-size: 1.5rem;
+    transition: text-decoration .25s ease-in-out, color .25s ease-in-out;
+}
+.websiteContainer:hover #trl{
+    filter: saturate(100%);
+}
+.websiteContainer:hover #wrf{
+    filter: saturate(100%);
+}
+.websiteContainer:hover a {
+    text-decoration: underline;
+    color: var(--B18AAB);
+}
+
+
+.inset {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+/*----------------------------Logos---------------------*/
+
+/*--------------------------Artwork---------------------*/
