@@ -69,6 +69,18 @@ section {
     border-radius: 10px;
 }
 
+.backButton {
+    all: unset;
+    background-color: var(--B18AAB);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.25s ease-in-out;
+}
+
+.backButton:hover {
+    background-color: var(--73406A);
+}
+
 /*------------------Nav Bar-------------------*/
 nav {
    display: grid;

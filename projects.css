@@ -22,17 +22,7 @@
 h2:first-of-type {
     margin-right: 1rem;
 }
-button:first-of-type {
-    all: unset;
-    background-color: var(--B18AAB);
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.25s ease-in-out;
-}
 
-button:first-of-type:hover {
-    background-color: var(--73406A);
-}
 
 /*--------------------------Websites--------------------*/
 .websiteContainer {
@@ -77,8 +67,6 @@ button:first-of-type:hover {
     display: flex;
     justify-content: space-evenly;
 }
-
-
 
 
 /*----------------------------Logos---------------------*/
