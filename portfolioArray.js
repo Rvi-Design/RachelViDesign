@@ -39,10 +39,10 @@ const WebsiteArray = [
 // --------------------------Logos--------------------------
 const LogoArray = [
     {
-        projectName: '',
-        mainImage: '',
-        mainAlt: '',
-        blurb: '',
+        projectName: 'DreamTeam',
+        mainImage: 'Assets/Logos/dreamteam/Logo.png',
+        mainAlt: 'A stylized "D" in an orange-to-pink-to-purple gradient, with a star cut-out in the middle of the "D".',
+        blurb: 'This logo was created for a team project while at SAIT. Dreamteam created a commercial, podcast episode, and several other creative works. The process of design for this logo  ',
         logoA: '',
         altA: '',
         logoB: '',
@@ -55,7 +55,7 @@ const LogoArray = [
     },
 
     {
-        projectName: '',
+        projectName: 'SweetPeach',
         mainImage: '',
         mainAlt: '',
         blurb: '',
@@ -71,7 +71,7 @@ const LogoArray = [
     },
 
      {
-        projectName: '',
+        projectName: 'Th3 Rice Lab',
         mainImage: '',
         mainAlt: '',
         blurb: '',
@@ -87,7 +87,7 @@ const LogoArray = [
     },
 
     {
-        projectName: '',
+        projectName: 'Jewels by Jules',
         mainImage: '',
         mainAlt: '',
         blurb: '',
@@ -103,7 +103,7 @@ const LogoArray = [
     },
 
     {
-        projectName: '',
+        projectName: 'Out Of Abyss',
         mainImage: '',
         mainAlt: '',
         blurb: '',
@@ -118,7 +118,7 @@ const LogoArray = [
 
     },
     {
-        projectName: '',
+        projectName: 'Rachel Vi design',
         mainImage: '',
         mainAlt: '',
         blurb: '',
@@ -147,3 +147,23 @@ const ArtworkArray = [
         altB: ''
     },
 ]
+
+// learning along with Dan in Thursday class
+let num1 = 6;
+let num2 = 1;
+let total = num1 + num2;
+console.log(total);
+
+
+function calculateTicketPrice () {
+    let qty = document.querySelector("#quantity").value;
+        qty = Number(qty); //form inputs are always strings, so we need to convert it to a number in order to calculate it. 
+    console.log("Quantity:" +qty);
+
+    // what ticket option was selected
+    let ticketType = document.querySelector("#ticket").value;
+    console.log(ticketType);
+}
+
+ document.querySelector("#quantity").addEventListener("change", calculateTicketPrice);
+ document.querySelector("#ticket").addEventListener("change", calculateTicketPrice);
