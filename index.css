@@ -100,30 +100,49 @@
 #jumpLinks {
     padding: 1rem;
     padding-bottom: 3rem;
+
 }
 #jumpLinkContainer {
   display: flex;
   justify-content: center;
   align-content: center;
   gap: 4%;
+
 }
 
 #jumpLinks a {
   background-color: var(--B18AAB);
+  background-image: linear-gradient(#B18AAB);
   color: white;
   border-radius: 25px;
   text-decoration: none;
   font-family: var(--Advent);
-  font-size: 3vw;
-  width: 300px;
-  height: 300px;
+  font-size: 5vw;
+  width: 40%;
   text-align: center;
   align-content: center;
   box-shadow: var(--boxShadow);
-  transition: background-color 0.25s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
+  padding: 10% 0;
 }
 
-#jumpLinks a:hover {
-    background-color: var(--73406A);
+#web:hover {
+    background-image: linear-gradient(rgba(115, 64, 106, 0.85)), url(Assets/Website/WRF/WRFlb.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+#log:hover {
+    background-image: linear-gradient(rgba(115, 64, 106, 0.85)), url(Assets/Logo/OOA/OOAlb.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#art:hover {
+    background-image: linear-gradient(rgba(115, 64, 106, 0.85)), url(Assets/Artwork/MSClong.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
