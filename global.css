@@ -37,12 +37,14 @@
     color: var(--73406A);
     font-size: 3rem;
     text-align: right;
+    padding-right: 10%;
 }
 .catLeft {
     font-family: var(--Aboreto);
     color: var(--73406A);
     font-size: 3rem;
 }
+
 
 .icon {
    fill: var(--73406A); 
@@ -57,6 +59,8 @@ body {
     background: url(Assets/BG.png);
     background-size: cover;
     background-position: center;
+    margin: 0;
+    padding: 0;
 }
 
 section {
@@ -86,6 +90,7 @@ nav {
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: min-content; 
+   padding: 0 5%;
 }
 nav p{
     grid-column: 1/2;
@@ -114,12 +119,18 @@ nav ul li a{
 nav ul li a:hover {
     color: var(--B18AAB);
 }
+
+nav svg {
+    display: none;
+}
 /*--------------------------CTA Banner--------------------*/
 .ctaBanner {
     background-image: linear-gradient(to right, #92638B, #B18AAB, #DDC6DA);
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
+    margin: 0;
+    padding: 0;
 }
 .ctaBanner a {
     text-decoration: none;
@@ -160,7 +171,7 @@ footer {
   grid-template-columns: min-content 1fr 1fr 1fr min-content 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0;
-  padding: 1rem;
+  padding: 1rem 2%;
   max-height: 305px;
   grid-row-gap: 1rem;
 }
@@ -222,4 +233,132 @@ footer a {
 }
 footer a:hover {
     color: var(--B18AAB);
+}
+
+#mobileWordmark {
+    display: none;
+}
+
+/*-----------------------Media Queries-------------------*/
+@media screen and (max-width: 600px) {
+
+/* body {
+    padding: 0 5%;
+} */
+
+.category {
+    font-size: 2rem;
+    padding: 0 1rem 0 0;
+}
+
+nav {
+    grid-template-columns: min-content auto;
+    grid-template-rows: min-content;
+    padding: 0;
+}
+
+#menuToggle {
+    display: block;
+    cursor: pointer;
+}
+
+#menuToggle svg {
+    transition: fill .25s ease-in-out,
+                transform 0.25s ease-in-out;
+}
+
+.navLinks {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    gap: 0;
+    font-size: 2rem;
+}
+
+.navLinks {
+  display: none;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.siteNav.is-open .navLinks {
+  display: flex;
+}
+
+
+.siteNav.is-open #menuToggle svg {
+  fill: var(--B18AAB);
+  transform: rotate(90deg);
+}
+
+  .navLinks.is-open {
+    display: flex;
+  }
+  
+
+.wordmark {
+    font-size: 1.5rem;
+    grid-column: 2/3;
+    padding: 0;
+    margin: 0;
+    align-content: center;
+}
+
+  nav svg {
+    display: block;
+    align-self: center;
+  }
+
+
+  /* ------CTA */
+
+.ctaBanner {
+    display: none;
+}
+
+  /* ------footer */
+
+    footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+ #footerSVGs {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    justify-content: center;
+  }
+
+#footerLinks {
+    gap: 5%;
+    justify-content: center;
+    text-align: center;
+    font-size: 4.5vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  #copyright {
+    font-size: 1rem;
+  }
+
+  .footerImg {
+    margin: 0;
+    padding: 0;
+  }
+  footer img:last-of-type {
+    display: none;
+  }
+  #vertWordmark {
+    display: none;
+  }
+
+  #mobileWordmark {
+    display: block;
+  }
 }
