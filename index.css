@@ -356,4 +356,62 @@ img:last-of-type {
     padding: 0;
 }
 
+#jumpLinkContainer {
+    gap: 15%;
+}
+
+#jumpLinks a {  
+font-size: 6vw;
+width: 50%;
+padding: 10% 0;
+border-radius: 10px;
+}
+
+
+#boxesContainer {
+padding: 0;
+display: flex;
+flex-direction: column;
+}
+
+.skillBoxList {
+display: none;
+}
+
+#sideBlurb {
+    font-family: var(--Bellota);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: var(--2F2F2F);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#ulBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content auto;
+}
+
+#boxesContainer {
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.skillBoxList {
+display: none;
+}
+
+#ulBox h2 {
+  color: var(--785A73);
+  font-weight: 700;
+}
+
+#ulBox ul li {
+  color: #FFF;
+  font-weight: 700;
+  font-family: var(--Comfortaa);
+}
+
 }
