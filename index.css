@@ -162,7 +162,7 @@ img:last-of-type {
 }
 
 #art::before {
-  background-image: linear-gradient(rgba(115, 64, 106, 0.85)),url(Assets/Artwork/MSClong.png);
+  background-image: linear-gradient(rgba(115, 64, 106, 0.85)),url(Assets/Artwork/MSC/MSClong.png);
 }
 
 
@@ -301,6 +301,14 @@ img:last-of-type {
     grid-column: 2/3;
 }
 
+
+#ulBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content auto;
+  width: 100%;
+}
+
 /*-----------------------Media Queries-------------------*/
 @media screen and (max-width: 600px) {
 
@@ -387,11 +395,7 @@ display: none;
     padding: 10px;
 }
 
-#ulBox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content auto;
-}
+
 
 #boxesContainer {
     padding: 0 1rem 1rem 1rem;
