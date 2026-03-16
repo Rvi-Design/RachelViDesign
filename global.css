@@ -67,6 +67,11 @@ section {
     background-color: rgba(115, 64, 106, 0.10);
     margin-bottom: 10%;
 }
+
+section p {
+    font-family: var(--Bellota);
+}
+
 .inset {
     background-color: rgba(115, 64, 106, 0.10);
     box-shadow: var(--innerShadow);
@@ -168,7 +173,7 @@ nav svg {
 footer {
   background-image: url(Assets/footerBG.png);
   display: grid;
-  grid-template-columns: min-content 1fr 1fr 1fr min-content 1fr;
+  grid-template-columns: min-content 1fr 1fr 1fr min-content min-content;
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0;
   padding: 1rem 2%;
