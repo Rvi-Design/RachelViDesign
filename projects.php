@@ -35,30 +35,36 @@ require('includes/connection.php');
             </button>
 
             <div class="carouselTrack">
-                <!-- 
-                    REPLACE these <img> tags with one per page of your graphic design portfolio PDF.
-                    Export each page as a JPG or PNG from Illustrator/Figma/Acrobat.
-                    Recommended: 1200px wide, JPG at 85% quality for fast loading.
-                    Name them sequentially: gd-01.jpg, gd-02.jpg, etc.
-                    Store them in: Assets/portfolios/graphic/
-                -->
-                <img src="Assets/portfolios/GDport/GD-01.png" alt="Graphic Design Portfolio — Page 1" class="carouselSlide active">
-                <img src="Assets/portfolios/GDport/GD-02.png" alt="Graphic Design Portfolio — Page 2" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-03.png" alt="Graphic Design Portfolio — Page 3" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-04.png" alt="Graphic Design Portfolio — Page 4" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-05.png" alt="Graphic Design Portfolio — Page 5" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-06.png" alt="Graphic Design Portfolio — Page 6" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-06.png" alt="Graphic Design Portfolio — Page 6" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-07.png" alt="Graphic Design Portfolio — Page 7" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-08.png" alt="Graphic Design Portfolio — Page 8" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-09.png" alt="Graphic Design Portfolio — Page 9" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-10.png" alt="Graphic Design Portfolio — Page 10" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-11.png" alt="Graphic Design Portfolio — Page 11" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-12.png" alt="Graphic Design Portfolio — Page 12" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-13.png" alt="Graphic Design Portfolio — Page 13" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-14.png" alt="Graphic Design Portfolio — Page 14" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-15.png" alt="Graphic Design Portfolio — Page 15" class="carouselSlide">
-                <img src="Assets/portfolios/GDport/GD-16.png" alt="Graphic Design Portfolio — Page 16" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-01.png" alt="Graphic Design Portfolio — Page 1" class="carouselSlide active">
+
+                <img src="Assets/GDport/GD-02.png" alt="Graphic Design Portfolio — Page 2" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-03.png" alt="Graphic Design Portfolio — Page 3" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-04.png" alt="Graphic Design Portfolio — Page 4" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-05.png" alt="Graphic Design Portfolio — Page 5" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-06.png" alt="Graphic Design Portfolio — Page 6" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-07.png" alt="Graphic Design Portfolio — Page 7" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-08.png" alt="Graphic Design Portfolio — Page 8" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-09.png" alt="Graphic Design Portfolio — Page 9" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-10.png" alt="Graphic Design Portfolio — Page 10" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-11.png" alt="Graphic Design Portfolio — Page 11" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-12.png" alt="Graphic Design Portfolio — Page 12" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-13.png" alt="Graphic Design Portfolio — Page 13" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-14.png" alt="Graphic Design Portfolio — Page 14" class="carouselSlide">
+
+                <img src="Assets/GDport/GD-15.png" alt="Graphic Design Portfolio — Page 15" class="carouselSlide">
 
             </div>
 
@@ -103,9 +109,9 @@ require('includes/connection.php');
                 <!-- 
                     REPLACE LATER.
                 -->
-                <img src="Assets/portfolios/web/web-01.jpg" alt="Web Development Portfolio — Page 1" class="carouselSlide active">
-                <img src="Assets/portfolios/web/web-02.jpg" alt="Web Development Portfolio — Page 2" class="carouselSlide">
-                <img src="Assets/portfolios/web/web-03.jpg" alt="Web Development Portfolio — Page 3" class="carouselSlide">
+                <img src="Assets/web/web-01.jpg" alt="Web Development Portfolio — Page 1" class="carouselSlide active">
+                <img src="Assets/web/web-02.jpg" alt="Web Development Portfolio — Page 2" class="carouselSlide">
+                <img src="Assets/web/web-03.jpg" alt="Web Development Portfolio — Page 3" class="carouselSlide">
       
             </div>
 
@@ -150,9 +156,9 @@ require('includes/connection.php');
                 <!-- 
     REPLACE LATER
                 -->
-                <img src="Assets/portfolios/art/art-01.jpg" alt="Artwork Portfolio — Page 1" class="carouselSlide active">
-                <img src="Assets/portfolios/art/art-02.jpg" alt="Artwork Portfolio — Page 2" class="carouselSlide">
-                <img src="Assets/portfolios/art/art-03.jpg" alt="Artwork Portfolio — Page 3" class="carouselSlide">
+                <img src="Assets/art/art-01.jpg" alt="Artwork Portfolio — Page 1" class="carouselSlide active">
+                <img src="Assets/art/art-02.jpg" alt="Artwork Portfolio — Page 2" class="carouselSlide">
+                <img src="Assets/art/art-03.jpg" alt="Artwork Portfolio — Page 3" class="carouselSlide">
 
             </div>
 

@@ -68,9 +68,9 @@ require('includes/connection.php');
             <h2 class="category">Projects</h2>
 
             <div id="jumpLinkContainer">
-            <a href="projects.html#websites" id="web"><span>Websites</span></a>
-            <a href="projects.html#logos" id="log"><span>Logos</span></a>
-            <a href="projects.html#artwork" id="art"><span>Artwork</span></a>
+            <a href="projects.php#webDevelopment" id="web"><span>Websites</span></a>
+            <a href="projects.php#graphicDesign" id="log"><span>Graphic Design</span></a>
+            <a href="projects.php#artwork" id="art"><span>Artwork</span></a>
             </div>
         </section>
 
