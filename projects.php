@@ -42,10 +42,24 @@ require('includes/connection.php');
                     Name them sequentially: gd-01.jpg, gd-02.jpg, etc.
                     Store them in: Assets/portfolios/graphic/
                 -->
-                <img src="Assets/portfolios/graphic/gd-01.jpg" alt="Graphic Design Portfolio — Page 1" class="carouselSlide active">
-                <img src="Assets/portfolios/graphic/gd-02.jpg" alt="Graphic Design Portfolio — Page 2" class="carouselSlide">
-                <img src="Assets/portfolios/graphic/gd-03.jpg" alt="Graphic Design Portfolio — Page 3" class="carouselSlide">
-                <!-- Add more pages here -->
+                <img src="Assets/portfolios/GDport/GD-01.png" alt="Graphic Design Portfolio — Page 1" class="carouselSlide active">
+                <img src="Assets/portfolios/GDport/GD-02.png" alt="Graphic Design Portfolio — Page 2" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-03.png" alt="Graphic Design Portfolio — Page 3" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-04.png" alt="Graphic Design Portfolio — Page 4" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-05.png" alt="Graphic Design Portfolio — Page 5" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-06.png" alt="Graphic Design Portfolio — Page 6" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-06.png" alt="Graphic Design Portfolio — Page 6" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-07.png" alt="Graphic Design Portfolio — Page 7" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-08.png" alt="Graphic Design Portfolio — Page 8" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-09.png" alt="Graphic Design Portfolio — Page 9" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-10.png" alt="Graphic Design Portfolio — Page 10" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-11.png" alt="Graphic Design Portfolio — Page 11" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-12.png" alt="Graphic Design Portfolio — Page 12" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-13.png" alt="Graphic Design Portfolio — Page 13" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-14.png" alt="Graphic Design Portfolio — Page 14" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-15.png" alt="Graphic Design Portfolio — Page 15" class="carouselSlide">
+                <img src="Assets/portfolios/GDport/GD-16.png" alt="Graphic Design Portfolio — Page 16" class="carouselSlide">
+
             </div>
 
             <button class="carouselBtn nextBtn" aria-label="Next slide">
@@ -60,7 +74,7 @@ require('includes/connection.php');
 
         <div class="carouselFooter">
             <span class="slideCounter" id="counterGraphic"></span>
-            <a href="assets/pdfs/graphic-design-portfolio.pdf" 
+            <a href="assets/RPayette_GDPortfolio.pdf" 
                download 
                class="downloadBtn"
                aria-label="Download Graphic Design Portfolio PDF">
@@ -87,14 +101,12 @@ require('includes/connection.php');
 
             <div class="carouselTrack">
                 <!-- 
-                    REPLACE these with exports from your web dev portfolio PDF.
-                    Store them in: Assets/portfolios/web/
-                    Name them: web-01.jpg, web-02.jpg, etc.
+                    REPLACE LATER.
                 -->
                 <img src="Assets/portfolios/web/web-01.jpg" alt="Web Development Portfolio — Page 1" class="carouselSlide active">
                 <img src="Assets/portfolios/web/web-02.jpg" alt="Web Development Portfolio — Page 2" class="carouselSlide">
                 <img src="Assets/portfolios/web/web-03.jpg" alt="Web Development Portfolio — Page 3" class="carouselSlide">
-                <!-- Add more pages here -->
+      
             </div>
 
             <button class="carouselBtn nextBtn" aria-label="Next slide">
@@ -109,7 +121,7 @@ require('includes/connection.php');
 
         <div class="carouselFooter">
             <span class="slideCounter" id="counterWeb"></span>
-            <a href="assets/pdfs/web-development-portfolio.pdf"
+            <a href="assets/CHANGE-ME"
                download
                class="downloadBtn"
                aria-label="Download Web Development Portfolio PDF">
@@ -136,14 +148,12 @@ require('includes/connection.php');
 
             <div class="carouselTrack">
                 <!-- 
-                    REPLACE these with exports from your artwork portfolio PDF.
-                    Store them in: Assets/portfolios/art/
-                    Name them: art-01.jpg, art-02.jpg, etc.
+    REPLACE LATER
                 -->
                 <img src="Assets/portfolios/art/art-01.jpg" alt="Artwork Portfolio — Page 1" class="carouselSlide active">
                 <img src="Assets/portfolios/art/art-02.jpg" alt="Artwork Portfolio — Page 2" class="carouselSlide">
                 <img src="Assets/portfolios/art/art-03.jpg" alt="Artwork Portfolio — Page 3" class="carouselSlide">
-                <!-- Add more pages here -->
+
             </div>
 
             <button class="carouselBtn nextBtn" aria-label="Next slide">
@@ -158,7 +168,7 @@ require('includes/connection.php');
 
         <div class="carouselFooter">
             <span class="slideCounter" id="counterArt"></span>
-            <a href="assets/pdfs/artwork-portfolio.pdf"
+            <a href="assets/CHANGE-ME"
                download
                class="downloadBtn"
                aria-label="Download Artwork Portfolio PDF">
