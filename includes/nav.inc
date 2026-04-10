@@ -7,10 +7,10 @@
         </p>
 
         <ul class="navLinks">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="commissions.html">Commissions</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>

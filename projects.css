@@ -1,74 +1,180 @@
-:root {
-    --ECE5EB: #ECE5EB;
-    --DDC6DA: #DDC6DA;
-    --B18AAB: #B18AAB;
-    --73406A: #73406A;
-    --785A73: #785A73;
-    --2F2F2F: #2F2F2F;
+/* ==================== projects.css ==================== */
 
-    --boxShadow: 4px 4px 4px 4px rgba(46, 24, 49, 0.25);
-    --innerShadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
-
-    --Aboreto: "Aboreto",Verdana, sans-serif;
-    --Advent: "Advent Pro", Arial, sans-serif;
-    --Bellota: "Bellota", Helvetica, sans-serif;
-    --Cairo: "Cairo", Tahoma, sans-serif;
-    --Cinzel: "Cinzel Decorative", Times, serif;
-    --Comfortaa: "Comfortaa", Verdana, sans-serif;
-
-}
-
-
-h2:first-of-type {
-    margin-right: 1rem;
-}
-
-
-/*--------------------------Websites--------------------*/
-.websiteContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr min-content;
-}
-
-#trl{
-    filter: saturate(30%);
-    transition: filter .25s ease-in-out;
-    padding: 1.5rem;
-    grid-row: 1/2;
-}
-#wrfContainer {
-    align-content: center;
-}
-#wrf{
-    filter: saturate(30%);
-    transition: filter .25s ease-in-out;
-}
-.websiteContainer a {
-    text-align: center;
-    font-family: var(--Cairo);
-    color: white;
-    font-size: 1.5rem;
-    transition: text-decoration .25s ease-in-out, color .25s ease-in-out;
-}
-.websiteContainer:hover #trl{
-    filter: saturate(100%);
-}
-.websiteContainer:hover #wrf{
-    filter: saturate(100%);
-}
-.websiteContainer:hover a {
-    text-decoration: underline;
-    color: var(--B18AAB);
-}
-
-
-.inset {
+/* --- Page header --- */
+#projectsHeader {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5% 0;
 }
 
+/* --- Portfolio section --- */
+.portfolioSection {
+    padding: 2rem 5% 3rem;
+    margin-bottom: 4rem;
+}
 
-/*----------------------------Logos---------------------*/
+.portfolioSection h2 {
+    margin-bottom: 1.5rem;
+}
 
-/*--------------------------Artwork---------------------*/
+/* --- Carousel wrapper --- */
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--boxShadow);
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* --- Slide track --- */
+.carouselTrack {
+    flex: 1;
+    position: relative;
+    /* landscape PDF aspect ratio — adjust if your PDFs differ */
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.carouselSlide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+    pointer-events: none;
+    user-select: none;
+}
+
+.carouselSlide.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* --- Prev / Next buttons --- */
+.carouselBtn {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background-color: rgba(115, 64, 106, 0.75);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0.75rem;
+    transition: background-color 0.2s ease-in-out, transform 0.15s ease;
+    z-index: 2;
+}
+
+.carouselBtn:hover {
+    background-color: var(--73406A);
+    transform: scale(1.08);
+}
+
+.carouselBtn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* --- Dots --- */
+.dotsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 0.9rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--DDC6DA);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.dot.active {
+    background-color: var(--73406A);
+    transform: scale(1.25);
+}
+
+/* --- Footer row (counter + download) --- */
+.carouselFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0.6rem auto 0;
+    padding: 0 0.25rem;
+}
+
+.slideCounter {
+    font-family: var(--Cairo);
+    font-size: 0.9rem;
+    color: var(--785A73);
+}
+
+.downloadBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--B18AAB);
+    color: white;
+    font-family: var(--Advent);
+    font-size: 0.95rem;
+    padding: 0.45rem 1.1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.25s ease-in-out;
+}
+
+.downloadBtn:hover {
+    background-color: var(--73406A);
+}
+
+/* ==================== Mobile ==================== */
+@media screen and (max-width: 600px) {
+
+    #projectsHeader {
+        padding: 1rem 1rem 0;
+    }
+
+    .portfolioSection {
+        padding: 1.5rem 1rem 2rem;
+    }
+
+    /* Hide arrow buttons on touch devices — swipe is used instead */
+    .carouselBtn {
+        display: none;
+    }
+
+    .carousel {
+        border-radius: 8px;
+        /* add a subtle touch indicator */
+        cursor: grab;
+    }
+
+    .carouselFooter {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+    }
+
+    .downloadBtn {
+        width: 100%;
+        justify-content: center;
+    }
+}
