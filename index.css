@@ -1,106 +1,90 @@
 
 /*--------------------------Tagline---------------------*/
 @keyframes taglineFade {
-    0% {opacity: 0%; transform: translateX(200px); }
+    0% {opacity: 0%; transform: translateX(-200px); }
     40% {opacity: 0%;}
-    100% {opacity: 100%; transform: translateX(-100px);}
+    100% {opacity: 100%; transform: translateX(10px);}
 }
-@keyframes bubbleFade {
-    0% {opacity: 0%; transform: scale(.75);}
-    100% {opacity: 100%;transform: scale(1);} 
-}
-
 #taglineLogo {
+    justify-self: center;
     display: grid;
-    grid-template-columns: min-content 2fr;
+    grid-template-columns: min-content min-content;
     grid-template-rows: min-content;
-    padding: 0 14%;
+    gap: 2rem;
 }
-#bubbleLogo {
-    grid-column: 1/2;
-    height: 70%;
-    width: auto;
+#taglineLogo svg {
+    grid-column: 2 / 3;
     margin: 0;
     padding: 0;
-    animation-name: bubbleFade;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
+    justify-self: center;
 }
 #taglineLogo h1 {
-    grid-column: 2/3;
-    font-family: var(--Comfortaa);
-    color: var(--73406A);
-    font-size: 3vw;
+    grid-column: 1 / 2;
+    font-family: var(--LogoFont);
+    font-size: 5vw;
     align-content: center;
-    padding: 0 0 0 1rem;
     margin: 0;
     animation-name: taglineFade;
     animation-duration: 2s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+    grid-row: 1 / 2;
+    text-align: center;
+    font-weight: 300;
+}
+#span1 {
+  color:var(--PrimaryLight) ;
+}
+
+#span2 {
+  color:var(--PrimaryMid) ;
+}
+
+#span3 {
+  color:var(--PrimaryDark) ;
 }
 /*--------------------------About Me--------------------*/
 
 #aboutMe {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content 2fr min-content;
-    padding: 0 10%;
-    row-gap: 1.5rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: min-content min-content min-content;
+    column-gap: 10%;
+    height: 849px;
 }
+
 #aboutMe h2 {
     grid-column: 2/3;
     grid-row: 1/2;
 
 }
 
-
 #aboutArcContainer {
-    grid-column: 1/2;
-    grid-row: 1/4;
-    position: relative;
-    justify-content: center;
-    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    height: 849px;
+    box-shadow: 43px 33px 58px 0 rgba(9, 19, 24, .4);
+    border-radius: 60px;
 }
 
-#smallCircle {
-    position: absolute;
-    top: 4%;
-    left: 15%;
-    opacity: 0;
-    scale: .75;
-    z-index: 2;
-    transform: translateY(0px);
-    transition: opacity 0.5s ease-in-out,
-    transform 0.5s ease-in-out;
-}
-
-img:last-of-type {
-  width: auto;
-  height: 80%;
-}
-
-#aboutArcContainer:hover  #smallCircle {
-   opacity: 1;
-   transform: scale(.7); 
-   transform: translateY(-30px);
-}
 #aboutMe p {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  font-family: var(--Bellota);
-  color: var(--2F2F2F);
-  padding: 5%;
-  margin: 0;
-  font-size: 1.5rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-family: var(--BodyFont);
+    color: #fff;
+    padding: 5%;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 #aboutLinks {
-    grid-column: 2/3;
-    grid-row: 3/4;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    padding-right: 10%;
 }
 
 /*--------------------------Project Buttons--------------------*/
@@ -110,185 +94,135 @@ img:last-of-type {
 }
 
 #jumpLinkContainer {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  gap: 4%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 0;
 }
 
-#jumpLinks a {
-  background-color: var(--B18AAB);
-  background-image: linear-gradient(#B18AAB);
-  color: white;
-  border-radius: 25px;
-  text-decoration: none;
-  font-family: var(--Advent);
-  font-size: 5vw;
-  width: 20%;
-  text-align: center;
-  align-content: center;
-  box-shadow: var(--boxShadow);
-  padding: 5% 0;
-  position: relative;
-  overflow: hidden;
+.transitionButtons {
+    background-image: linear-gradient(#B18AAB);
+    position: relative;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: var(--InfoFont);
+    font-size: 5vw;
+    width: 20%;
+    text-align: center;
+    align-content: center;
+    box-shadow: var(--boxShadow);
+    padding: 5% 0;
 }
-
-
-#jumpLinks a::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0;
-  z-index: 0;
-  transition: opacity 0.25s ease-in-out;
-}
-
-#jumpLinks a span {
-  position: relative;
-  z-index: 2;
-}
-
 
 #web::before {
-  background-image: linear-gradient(rgba(115, 64, 106, 0.85)),url(Assets/Website/WRF/WRFlb.png);
-  background-position: center;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/Web.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    opacity: 0;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out;
+    background-position: center;
+}
+#web:hover::before {
+    opacity: 0.4;
 }
 
-#log::before {
-  background-image: linear-gradient(rgba(115, 64, 106, 0.85)),url(Assets/Logo/OOA/OOAlb.png);
-  background-position: center;
+#graphic::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Assets/Graphic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out;
+    background-position: center;
+}
+#graphic:hover::before {
+    opacity: 0.4;
 }
 
 #art::before {
-  background-image: linear-gradient(rgba(115, 64, 106, 0.85)),url(Assets/Artwork/MSC/MSClong.png);
-}
-
-
-#jumpLinks a:hover::before {
-  opacity: 1;
-}
-
-
-/* #web:hover {
-    background-image: linear-gradient(rgba(115, 64, 106, 0.85)), url(Assets/Website/WRF/WRFlb.png);
-    background-position: center;
-    opacity: 1;
-}
-
-#log:hover {
-    background-image: linear-gradient(rgba(115, 64, 106, 0.85)), url(Assets/Logo/OOA/OOAlb.png);
-    background-position: center;
-
-}
-
-#art:hover {
-    background-image: linear-gradient(rgba(115, 64, 106, 0.85)), url(Assets/Artwork/MSClong.png);
-} */
-
-/*----------------------Skills----------------------------*/
-#boxesContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content;
-    padding: 0 2rem 2rem 2rem;
-    column-gap: 2rem;
-}
-.skillBoxList {
-    grid-column: 1/2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    max-width: 600px;
-    justify-self: center;
-    width: 100%;
-    padding: 0;
-}
-
-.skillBox {
-    position: relative;
-    aspect-ratio: 1 / 1;
-    background-color: var(--B18AAB); 
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.skillBox svg {
-    object-fit: cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    max-width: 160px;
-    opacity: .8;
+    background-image: url(Assets/Art.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out;
+    background-position: center;
 }
-
-.hoverBlurb {
-    transition: all .4s linear;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    bottom: 0;
-    margin-top: -40px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px 10px;
-    color: #fff;
-    background-color: rgba(115,64,106,.8);
-}
-
-.skillBox:hover .hoverBlurb {
-    top: 0;
-    bottom: 0;
-    margin-top: 0;
-    padding: 15px;
-    background-color: rgba(115,64,106,.8);
-}
-
-.hoverBlurb h3 {
-  line-height: 20px;
-  margin: 0;
-  text-transform: uppercase;
-  font-size: clamp(10px, .80vw, 1.5rem);
-  font-weight: 700;
-  color: var(--ECE5EB);
-  font-family: var(--Comfortaa);
-  text-align: center;
-  text-decoration: underline;
+#art:hover::before {
+    opacity: 0.4;
 }
 
 
-.innerBlurb {
-  font-size: clamp(18px, .75vw, 1rem);
-  font-family: var(--Advent);
+
+/*----------------------Skills----------------------------*/
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-right: 5%;
 }
 
-#sideBlurb{
-    grid-column: 2/3;
+.skills h2 {
+    grid-column: 2 / 3;
+}
+
+#boxesContainer {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content min-content;
+    padding: 10px 2rem;
+    gap: 2rem;
+}
+
+#sideBlurb {
+    grid-column: 2 / 3;
     padding: 0 5%;
-    font-family: var(--Bellota);
+    font-family: var(--BodyFont);
     font-size: clamp(1rem, 2.5vw, 1.5rem);
-    color: var(--2F2F2F);
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto min-content auto;
+    grid-template-rows: auto min-content;
 }
+
 #sideBlurb p{
     grid-row: 1/2;
     grid-column: 1/3;
     padding: 0 1rem;
     text-indent: .5rem each-line;
 }
-#sideBlurb h2 {
-  text-decoration: underline;
-  grid-column: 1/2;
-  grid-row: 2/3;
-  margin: 0;
+#sideBlurb h3 {
+    text-decoration: underline;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 0;
+    margin-left: 1rem;
 }
 
-#sideBlurb h2:last-of-type {
+#sideBlurb h3:last-of-type {
     grid-column: 2/3;
 }
 
@@ -301,13 +235,11 @@ img:last-of-type {
     grid-column: 2/3;
 }
 
-
-#ulBox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content auto;
-  width: 100%;
+.skillsList li {
+  color: #fff;
 }
+
+
 
 /*-----------------------Media Queries-------------------*/
 @media screen and (max-width: 600px) {
@@ -352,7 +284,7 @@ img:last-of-type {
 }
 
 #aboutMe p {
-  font-family: var(--Bellota);
+  font-family: var(--BodyFont);
   color: var(--2F2F2F);
   padding: 5%;
   margin: 0;
@@ -387,7 +319,7 @@ display: none;
 }
 
 #sideBlurb {
-    font-family: var(--Bellota);
+    font-family: var(--BodyFont);
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     color: var(--2F2F2F);
     display: flex;

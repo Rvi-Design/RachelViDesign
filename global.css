@@ -1,104 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cairo:wght@200..1000&family=Cinzel+Decorative:wght@400;700;900&family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Berkshire+Swash&family=Comfortaa:wght@300..700&family=Questrial&display=swap');
 
 *{
     box-sizing: border-box;
 }
 
 :root {
-    --ECE5EB: #ECE5EB;
-    --DDC6DA: #DDC6DA;
-    --B18AAB: #B18AAB;
-    --73406A: #73406a;
-    --785A73: #785A73;
-    --2F2F2F: #2F2F2F;
+    --background: #281330;
+    --PrimaryLight: #CEA9D9;
+    --PrimaryMid: #9669A4;
+    --PrimaryDark: #85449A;
+
+    --AccentPink: #F977AF;
+    --AccentBlack: #1E121A;
+
 
     --boxShadow: 4px 4px 4px 4px rgba(46, 24, 49, 0.25);
     --innerShadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
 
-    --Aboreto: "Aboreto",Verdana, sans-serif;
-    --Advent: "Advent Pro", Arial, sans-serif;
-    --Bellota: "Bellota", Helvetica, sans-serif;
-    --Cairo: "Cairo", Tahoma, sans-serif;
-    --Cinzel: "Cinzel Decorative", Times, serif;
-    --Comfortaa: "Comfortaa", Verdana, sans-serif;
+    --LogoFont: "Berkshire Swash";
+    --Comfortaa: "Comfortaa";
+    --InfoFont: "Questrial";
+    --BodyFont: "Bellota Text";
 
 }
 
 .wordmark {
-    font-family: var(--Aboreto);
+    font-family: var(--LogoFont);
     font-size: 4vw;
 }
-.wordmark span{
-    font-family: var(--Cinzel);
-}
 
-.category {
-    font-family: var(--Aboreto);
-    color: var(--73406A);
-    font-size: 3rem;
+h2 {
+    font-family: var(--LogoFont);
+    color: #fff;
+    font-size: 6vw;
     text-align: right;
     padding-right: 10%;
+    font-weight: 300;
+    margin: 0;
+}
+h3 {
+    font-family: var(--Comfortaa);
+    color: var(--PrimaryLight);
 }
 .catLeft {
-    font-family: var(--Aboreto);
-    color: var(--73406A);
-    font-size: 3rem;
+    text-align: left;
 }
 
 
 .icon {
-   fill: var(--73406A); 
+   fill: #CEA9D9; 
    filter: drop-shadow(4px 4px 4px 4px rgba(0, 0, 0, 0.25));
    transition: fill ease-in-out .25s;
 }
 .icon:hover {
-    fill: var(--B18AAB);
+    fill: #9669A4;
 }
 
 body {
-    background: url(Assets/BG.png);
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
+    background-color: var(--background);
 }
 
 section {
-    background-color: rgba(115, 64, 106, 0.10);
-    margin-bottom: 10%;
+    margin: 10% 0;
 }
 
 section p {
-    font-family: var(--Bellota);
+    font-family: var(--BodyFont);
+    color: #fff;
 }
 
-.inset {
-    background-color: rgba(115, 64, 106, 0.10);
-    box-shadow: var(--innerShadow);
-    border-radius: 10px;
-}
 
-.backButton {
-    all: unset;
-    background-color: var(--B18AAB);
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.25s ease-in-out;
-}
-
-.backButton:hover {
-    background-color: var(--73406A);
-}
-
-#backArrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
 /*------------------Nav Bar-------------------*/
 nav {
    display: grid;
@@ -116,7 +87,7 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
     color: var(--73406A);
-    font-family: var(--Cairo);
+    font-family: var(--InfoFont);
     margin: 0;
     padding: 0;
 }
@@ -139,95 +110,97 @@ nav svg {
 }
 /*--------------------------CTA Banner--------------------*/
 .ctaBanner {
-    background-image: linear-gradient(to right, #92638B, #B18AAB, #DDC6DA);
+    background-image: linear-gradient(to right, #B157A2, #F977AF);
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
     margin: 0;
     padding: 0;
 }
-.ctaBanner a {
-    text-decoration: none;
-    justify-self: center;
-    align-self: center;
 
-}
 .ctaBanner p {
-    grid-column: 1/2;
-    font-family: var(--Cairo);
+    grid-column: 1 / 2;
+    font-family: var(--InfoFont);
     color: white;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 0;
+    font-size: 68px;
+    padding: 1rem;
     margin: 0;
 }
 .bannerButton {
-    grid-column: 2/3;
-    all: unset;
-    background-color: var(--B18AAB);
-    color: white;
-    font-family: var(--Advent);
-    font-size: 3vw;
+    grid-column: 2 / 3;
+    text-decoration: none;
+    justify-self: center;
+    align-self: center;
+    color: #fff;
+    font-size: 64px;
+    font-family: var(--LogoFont);
+    background-color: var(--AccentBlack);
     border-radius: 25px;
     box-shadow: var(--boxShadow);
     text-align: center;
-    margin: 0;
-    padding: 0 1rem;
     transition: background-color .25s ease-in-out;
+    padding: 1rem;
 }
+
+* 
 .bannerButton:hover {
-    background-color: var(--73406A);
+    background-color: #43254e;
 }
 /*------------------Footer--------------------*/
 footer {
-  background-image: url(Assets/footerBG.png);
-  display: grid;
-  grid-template-columns: min-content 1fr 1fr 1fr min-content min-content;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin: 0;
-  padding: 1rem 2%;
-  max-height: 305px;
-  grid-row-gap: 1rem;
+    background-image: url(Assets/footerBG.png);
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: auto;
+    margin: 0;
+    padding: 1rem;
+}
+
+.leftFoot {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content;
 }
 
 #footerSVGs {
-  grid-column: 1/2;
-  grid-row: 1/4;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20%;
 }
 
 #footerLinks {
-grid-column: 2/5;
-  grid-row: 1/2;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 2vw;
-  font-family: var(--Cairo);
-  color: var(--73406A);
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2vw;
+    font-family: var(--InfoFont);
+    color: #fff;
+}
+
+#copyright {
+    grid-row: 3 / 4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    align-content: end;
+    font-size: 1.5rem;
+    font-family: var(--InfoFont);
+    color: #8C6599;
+}
+
+.rightFoot {
+    display: grid;
+    grid-template-columns: min-content min-content;
 }
 
 #vertWordmark {
-grid-column: 5/6;
-  grid-row: 1/4;
-  margin: 0;
-  padding: 0;
-  align-content: center;
-  color: var(--2F2F2F);
-}
-
-#copyright{
-grid-column: 3/5;
-  grid-row: 3/4;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  align-content: end;
-  font-size: 1.5rem;
-  font-family: var(--Cairo);
-  color: var(--2F2F2F);
+    grid-row: 1 / 4;
+    margin: 0;
+    color: #fff;
+    text-align: right;
 }
 
 .footerImg {
@@ -242,8 +215,9 @@ footer ul {
     list-style: none;
 }
 footer a {
-    color: var(--73406A);
     transition: color 0.25s ease-in-out;
+    color: #fff;
+    font-weight: 300;
 }
 footer a:hover {
     color: var(--B18AAB);

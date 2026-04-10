@@ -19,7 +19,7 @@ require('includes/connection.php');
 
     <div id="projectsHeader">
         <?php include 'includes/backButton.inc'; ?>
-        <h1 class="category">Projects</h1>
+        <h1 >Projects</h1>
     </div>
 
     <!--------------------------GRAPHIC DESIGN--------------------------->

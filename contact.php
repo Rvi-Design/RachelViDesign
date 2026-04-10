@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div id="contactHeader">
         <?php include 'inclludes/backbttn.inc'; ?>
-        <h1 class="category">Contact Me</h1>
+        <h1 >Contact Me</h1>
     </div>
 
     <section id="contactSection">

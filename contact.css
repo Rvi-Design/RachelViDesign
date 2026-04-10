@@ -49,7 +49,7 @@
 
 /* --- Labels --- */
 .formGroup label {
-    font-family: var(--Bellota);
+    font-family: var(--BodyFont);
     color: var(--73406A);
     font-size: 1rem;
     font-weight: 700;
@@ -64,7 +64,7 @@
 /* --- Inputs & textarea --- */
 .formGroup input,
 .formGroup textarea {
-    font-family: var(--Bellota);
+    font-family: var(--BodyFont);
     font-size: 1rem;
     padding: 0.6rem 0.9rem;
     border: 1.5px solid var(--DDC6DA);
@@ -116,7 +116,7 @@
     border-left: 4px solid var(--73406A);
     padding: 1rem 1.25rem;
     border-radius: 6px;
-    font-family: var(--Bellota);
+    font-family: var(--BodyFont);
     color: var(--73406A);
     font-size: 1.05rem;
     margin-bottom: 1rem;
@@ -128,7 +128,7 @@
     border-left: 4px solid #b43c3c;
     padding: 0.75rem 1.25rem 0.75rem 2rem;
     border-radius: 6px;
-    font-family: var(--Bellota);
+    font-family: var(--BodyFont);
     color: #7a2020;
     font-size: 0.95rem;
     margin-bottom: 1rem;
