@@ -27,6 +27,25 @@
 .wordmark {
     font-family: var(--LogoFont);
     font-size: 4vw;
+    color: #fff;
+    text-decoration: none;
+    grid-column: 1 / 2;
+}
+*
+
+#Rachel, #Vi, #Design {
+    transition: color 0.25s ease;
+}
+
+.wordmark:hover #Rachel {
+    color: var(--PrimaryLight);
+}
+
+.wordmark:hover #Vi {
+    color: var(--PrimaryMid);
+}
+.wordmark:hover #Design {
+    color: var(--PrimaryDark);
 }
 
 h2 {
@@ -72,21 +91,22 @@ section p {
 
 /*------------------Nav Bar-------------------*/
 nav {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: min-content; 
-   padding: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    padding: 0 2%;
+    margin-bottom: 3%;
 }
 nav p{
     grid-column: 1/2;
     color: var(--73406A);
 }
 nav ul {
-    grid-column: 2/3;
+    grid-column: 2 / 3;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    color: var(--73406A);
+    color: #fff;
     font-family: var(--InfoFont);
     margin: 0;
     padding: 0;
@@ -94,15 +114,17 @@ nav ul {
 
 nav ul li {
     align-content: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    
 }
 
 nav ul li a{
-    color: var(--73406A);
+    color:  #fff;
     transition: color ease-in-out .25s;
+    font-weight: 300;
 }
 nav ul li a:hover {
-    color: var(--B18AAB);
+    color: var(--PrimaryDark);
 }
 
 nav svg {
@@ -112,9 +134,8 @@ nav svg {
 .ctaBanner {
     background-image: linear-gradient(to right, #B157A2, #F977AF);
     display: grid;
-    grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
-    margin: 0;
+    margin: 0 0 10% 0;
     padding: 0;
 }
 
@@ -154,6 +175,7 @@ footer {
     grid-template-rows: auto;
     margin: 0;
     padding: 1rem;
+    box-shadow: 0px -20px 60px rgba(30, 13, 36, 1);
 }
 
 .leftFoot {
@@ -194,6 +216,7 @@ footer {
 .rightFoot {
     display: grid;
     grid-template-columns: min-content min-content;
+    column-gap: 2px;
 }
 
 #vertWordmark {
@@ -220,7 +243,7 @@ footer a {
     font-weight: 300;
 }
 footer a:hover {
-    color: var(--B18AAB);
+    color: var(--PrimaryDark);
 }
 
 #mobileWordmark {

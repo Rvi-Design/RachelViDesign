@@ -4,8 +4,17 @@
 #projectsHeader {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem 5% 0;
+    background-image: url(Assets/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bannerText {
+    font-size: 150px;
+    text-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
+    font-family: var(--Comfortaa);
+    color: #fff;
+    margin: 0;
 }
 
 /* --- Portfolio section --- */
@@ -76,7 +85,7 @@
 }
 
 .carouselBtn:hover {
-    background-color: var(--73406A);
+    background-color: rgba(115, 64, 106, 1);
     transform: scale(1.08);
 }
 
@@ -98,7 +107,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: var(--DDC6DA);
+    background-color: var(--PrimaryMid);
     border: none;
     cursor: pointer;
     padding: 0;
@@ -106,7 +115,7 @@
 }
 
 .dot.active {
-    background-color: var(--73406A);
+    background-color: var(--PrimaryLight);
     transform: scale(1.25);
 }
 
@@ -121,11 +130,10 @@
 }
 
 .slideCounter {
-    font-family: var(--Cairo);
+    font-family: var(--Comfortaa);
     font-size: 0.9rem;
-    color: var(--785A73);
+    color: var(--PrimaryLight);
 }
-
 .downloadBtn {
     display: inline-flex;
     align-items: center;

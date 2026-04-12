@@ -7,8 +7,8 @@ require('includes/connection.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rachel Vi Design || Projects</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="global.css">
     <?php include 'includes/requiredLinks.inc'; ?>
 </head>
 <body>
@@ -19,7 +19,7 @@ require('includes/connection.php');
 
     <div id="projectsHeader">
         <?php include 'includes/backButton.inc'; ?>
-        <h1 >Projects</h1>
+        <p class="bannerText">Projects</p>
     </div>
 
     <!--------------------------GRAPHIC DESIGN--------------------------->
