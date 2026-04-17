@@ -12,6 +12,7 @@ require('includes/connection.php');
     <title>Rachel Vi Design || Home</title>
     <link rel="stylesheet" href="index.css">
     <?php include 'includes/requiredLinks.inc';?>
+        <link rel="icon" type="image/png" href="assets/favicon.ico">
 
 </head>
 <body>

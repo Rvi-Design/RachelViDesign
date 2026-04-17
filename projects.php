@@ -9,6 +9,7 @@ require('includes/connection.php');
     <title>Rachel Vi Design || Projects</title>
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="global.css">
+        <link rel="icon" type="image/png" href="assets/favicon.ico">
     <?php include 'includes/requiredLinks.inc'; ?>
 </head>
 <body>
@@ -74,13 +75,19 @@ require('includes/connection.php');
                 </svg>
             </button>
 
+            <button class="fullscreenBtn" aria-label="Toggle fullscreen"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
+                <path d="M216,48V88a8,8,0,0,1-16,0V67.31l-37.34,37.35a8,8,0,0,1-11.32-11.32L188.69,56H168a8,8,0,0,1,0-16h40A8,8,0,0,1,216,48ZM93.66,141.34,56,178.69V158a8,8,0,0,0-16,0v40a8,8,0,0,0,8,8H88a8,8,0,0,0,0-16H67.31l37.35-37.34a8,8,0,0,0-11.32-11.32Z"/>
+                </svg>
+            </button>
         </div>
 
         <div class="dotsContainer" id="dotsGraphic"></div>
 
         <div class="carouselFooter">
             <span class="slideCounter" id="counterGraphic"></span>
-            <a href="assets/RPayette_GDPortfolio.pdf" 
+               
+            <a href="Assets/GDport/RPayette_GDPortfolio.pdf" 
                download 
                class="downloadBtn"
                aria-label="Download Graphic Design Portfolio PDF">
@@ -106,18 +113,39 @@ require('includes/connection.php');
             </button>
 
             <div class="carouselTrack">
-                <!-- 
-                    REPLACE LATER.
-                -->
-                <img src="Assets/web/web-01.jpg" alt="Web Development Portfolio — Page 1" class="carouselSlide active">
-                <img src="Assets/web/web-02.jpg" alt="Web Development Portfolio — Page 2" class="carouselSlide">
-                <img src="Assets/web/web-03.jpg" alt="Web Development Portfolio — Page 3" class="carouselSlide">
+
+                <img src="Assets/WDport/WD-01.png" alt="Web Development Portfolio — Page 1" class="carouselSlide active">
+
+                <img src="Assets/WDport/WD-02.png" alt="Web Development Portfolio — Page 2" class="carouselSlide">
+
+                <img src="Assets/WDport/WD-03.png" alt="Web Development Portfolio — Page 3" class="carouselSlide">
+
+                <img src="Assets/WDport/WD-04.png" alt="Web Development Portfolio — Page 4" class="carouselSlide">
+
+                <img src="Assets/WDport/WD-05.png" alt="Web Development Portfolio — Page 5" class="carouselSlide">
+
+                <img src="Assets/WDport/WD-06.png" alt="Web Development Portfolio — Page 6" class="carouselSlide">
+
+                <img src="Assets/WDport/WD-07.png" alt="Web Development Portfolio — Page 7" class="carouselSlide">
+
+                <img src="Assets/WDport/WD-08.png" alt="Web Development Portfolio — Page 8" class="carouselSlide">
+
+                <img src="Assets/WDport/WD-09.png" alt="Web Development Portfolio — Page 9" class="carouselSlide">
+
+                <img src="Assets/WDport/WD-10.png" alt="Web Development Portfolio — Page 10" class="carouselSlide">
+
+
       
             </div>
 
             <button class="carouselBtn nextBtn" aria-label="Next slide">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#f7f2f6" viewBox="0 0 256 256">
                     <path d="M32,128a8,8,0,0,1,8-8H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72a8,8,0,0,1,0,11.32l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40A8,8,0,0,1,32,128Z"/>
+                </svg>
+            </button>
+            <button class="fullscreenBtn" aria-label="Toggle fullscreen"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
+                <path d="M216,48V88a8,8,0,0,1-16,0V67.31l-37.34,37.35a8,8,0,0,1-11.32-11.32L188.69,56H168a8,8,0,0,1,0-16h40A8,8,0,0,1,216,48ZM93.66,141.34,56,178.69V158a8,8,0,0,0-16,0v40a8,8,0,0,0,8,8H88a8,8,0,0,0,0-16H67.31l37.35-37.34a8,8,0,0,0-11.32-11.32Z"/>
                 </svg>
             </button>
 
@@ -127,7 +155,7 @@ require('includes/connection.php');
 
         <div class="carouselFooter">
             <span class="slideCounter" id="counterWeb"></span>
-            <a href="assets/CHANGE-ME"
+            <a href="assets/WDport/RPayette_WDPortfolio.pdf"
                download
                class="downloadBtn"
                aria-label="Download Web Development Portfolio PDF">
@@ -156,15 +184,34 @@ require('includes/connection.php');
                 <!-- 
     REPLACE LATER
                 -->
-                <img src="Assets/art/art-01.jpg" alt="Artwork Portfolio — Page 1" class="carouselSlide active">
-                <img src="Assets/art/art-02.jpg" alt="Artwork Portfolio — Page 2" class="carouselSlide">
-                <img src="Assets/art/art-03.jpg" alt="Artwork Portfolio — Page 3" class="carouselSlide">
+                <img src="Assets/AWport/AW-01.png" alt="Artwork Portfolio — Page 1" class="carouselSlide active">
+
+                <img src="Assets/AWport/AW-02.png" alt="Artwork Portfolio — Page 2" class="carouselSlide">
+
+                <img src="Assets/AWport/AW-03.png" alt="Artwork Portfolio — Page 3" class="carouselSlide">
+
+                <img src="Assets/AWport/AW-04.png" alt="Artwork Portfolio — Page 4" class="carouselSlide">
+
+                <img src="Assets/AWport/AW-05.png" alt="Artwork Portfolio — Page 5" class="carouselSlide">
+
+                <img src="Assets/AWport/AW-06.png" alt="Artwork Portfolio — Page 6" class="carouselSlide">
+
+                <img src="Assets/AWport/AW-07.png" alt="Artwork Portfolio — Page 7" class="carouselSlide">
+
+                <img src="Assets/AWport/AW-08.png" alt="Artwork Portfolio — Page 8" class="carouselSlide">
+
+                
 
             </div>
 
             <button class="carouselBtn nextBtn" aria-label="Next slide">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#f7f2f6" viewBox="0 0 256 256">
                     <path d="M32,128a8,8,0,0,1,8-8H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72a8,8,0,0,1,0,11.32l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40A8,8,0,0,1,32,128Z"/>
+                </svg>
+            </button>
+            <button class="fullscreenBtn" aria-label="Toggle fullscreen"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
+                <path d="M216,48V88a8,8,0,0,1-16,0V67.31l-37.34,37.35a8,8,0,0,1-11.32-11.32L188.69,56H168a8,8,0,0,1,0-16h40A8,8,0,0,1,216,48ZM93.66,141.34,56,178.69V158a8,8,0,0,0-16,0v40a8,8,0,0,0,8,8H88a8,8,0,0,0,0-16H67.31l37.35-37.34a8,8,0,0,0-11.32-11.32Z"/>
                 </svg>
             </button>
 
@@ -174,7 +221,7 @@ require('includes/connection.php');
 
         <div class="carouselFooter">
             <span class="slideCounter" id="counterArt"></span>
-            <a href="assets/CHANGE-ME"
+            <a href="Assets/AWport/RPayette_AWPortfolio.pdf"
                download
                class="downloadBtn"
                aria-label="Download Artwork Portfolio PDF">

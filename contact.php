@@ -1,6 +1,18 @@
+
 <?php
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
 
 require('includes/connection.php');
+
+// $id = 1;
+// $sql = "SELECT contacts.name FROM contacts WHERE contacts.ID = $id";
+
+// $result = mysqli_query($connection, $sql);
+// if ($row = mysqli_fetch_assoc($result)) {
+//     echo $row['name']; 
+// }
+// Sanity check - Success. IS CONNECTED!!
 
 $errors = [];
 $success = false;
@@ -21,13 +33,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($errors)) {
 
         // --------------------Insert into DB---------------
-        $stmt = $conn->prepare(
+  
+        $stmt = $connection->prepare(
             "INSERT INTO contacts (name, email, reason, esd, social_media)
-             VALUES (?, ?, ?, ?, ?)"
+            VALUES (?, ?, ?, ?, ?)"
         );
+
+        if (!$stmt) {
+            die("Prepare failed: " . $connection->error);
+        }
+
         $stmt->bind_param("sssss", $name, $email, $reason, $esd, $social);
-        $stmt->execute();
+
+        if (!$stmt->execute()) {
+            die("Execute failed: " . $stmt->error);
+        }
+
         $stmt->close();
+        // new method end
 
         $to      = "rachelvipayette@gmail.com";
         $subject = "New Contact Form Submission — Rachel Vi Design";
@@ -57,6 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Rachel Vi Design || Contact</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="contact.css">
+        <link rel="icon" type="image/png" href="assets/favicon.ico">
     <?php include 'includes/requiredLinks.inc'; ?>
 </head>
 <body>
@@ -66,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <main>
 
     <div id="contactHeader">
-        <?php include 'inclludes/backbttn.inc'; ?>
+        <?php include 'includes/backbttn.inc'; ?>
         <h1 >Contact Me</h1>
     </div>
 
@@ -87,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php endif; ?>
 
         <?php if (!$success): ?>
-        <form method="POST" action="contact.php" id="contactForm" novalidate>
+        <form method="POST" action="" id="contactForm" novalidate>
 
             <div class="formRow">
                 <div class="formGroup">
@@ -151,7 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
 
             <div id="submitRow">
-                <button type="submit" class="bannerButton" id="submitBtn">Submit</button>
+                <button type="submit" id="submitBtn">Submit</button>
             </div>
 
         </form>

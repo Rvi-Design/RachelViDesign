@@ -88,7 +88,15 @@ section p {
     color: #fff;
 }
 
-
+.backButton {
+    background-color: var(--PrimaryMid);
+    border-radius: 600px;
+    padding: 5px;
+    transition: background-color 0.25s ease-in-out;
+}
+.backButton:hover {
+    background-color: var(--PrimaryDark);
+}
 /*------------------Nav Bar-------------------*/
 nav {
     display: grid;

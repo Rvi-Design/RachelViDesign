@@ -46,14 +46,44 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     }
 
     function updateButtons() {
-        // Optional: disable at ends for a non-looping feel.
-        // Remove these two lines if you prefer infinite looping arrows.
         prevBtn.disabled = current === 0;
         nextBtn.disabled = current === slides.length - 1;
     }
 
     prevBtn.addEventListener('click', () => goTo(current - 1));
     nextBtn.addEventListener('click', () => goTo(current + 1));
+
+    // ── Fullscreen ───────────────────────────────────────────
+const fullscreenBtn = carousel.querySelector('.fullscreenBtn');
+
+if (fullscreenBtn) {
+    fullscreenBtn.addEventListener('click', () => {
+        if (!document.fullscreenElement) {
+
+            if (carousel.requestFullscreen)             carousel.requestFullscreen();
+            else if (carousel.webkitRequestFullscreen)  carousel.webkitRequestFullscreen();
+            else if (carousel.msRequestFullscreen)      carousel.msRequestFullscreen();
+        } else {
+    
+            if (document.exitFullscreen)            document.exitFullscreen();
+            else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+            else if (document.msExitFullscreen)     document.msExitFullscreen();
+        }
+    });
+
+
+    document.addEventListener('fullscreenchange', () => {
+        const isFullscreen = !!document.fullscreenElement;
+        fullscreenBtn.setAttribute('aria-label', isFullscreen ? 'Exit fullscreen' : 'Toggle fullscreen');
+        fullscreenBtn.innerHTML = isFullscreen
+            ? `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 256 256">
+                <path d="M148,88V48a8,8,0,0,1,16,0V68.69l37.34-37.35a8,8,0,0,1,11.32,11.32L175.31,80H196a8,8,0,0,1,0,16H156A8,8,0,0,1,148,88ZM100,168H60a8,8,0,0,0,0,16H80.69L43.34,221.34a8,8,0,0,0,11.32,11.32L92,195.31V216a8,8,0,0,0,16,0V176A8,8,0,0,0,100,168Z"/>
+               </svg>`
+            : `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 256 256">
+                <path d="M216,48V88a8,8,0,0,1-16,0V67.31l-37.34,37.35a8,8,0,0,1-11.32-11.32L188.69,56H168a8,8,0,0,1,0-16h40A8,8,0,0,1,216,48ZM93.66,141.34,56,178.69V158a8,8,0,0,0-16,0v40a8,8,0,0,0,8,8H88a8,8,0,0,0,0-16H67.31l37.35-37.34a8,8,0,0,0-11.32-11.32Z"/>
+               </svg>`;
+    });
+}
 
     // Touch & Swipe
     let touchStartX = 0;

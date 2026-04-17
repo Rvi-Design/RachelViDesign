@@ -1,0 +1,13 @@
+#commissionsMessage {
+    text-align: center;
+    color: #fff;
+    font-family: var(--BodyFont);
+    line-height: 2;
+    font-size: 18px;
+}
+
+#sorry {
+    text-align: center;
+    color: #fff;
+    margin-top: 1rem;
+}

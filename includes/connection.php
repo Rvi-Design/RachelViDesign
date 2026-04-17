@@ -1,5 +1,6 @@
 <?php 
-$server = "sh-cp39";
+$server = "localhost";
+// $server = "sh-cp39";
 $username = "rache827_Admin";
 $password = "?kP7]tP9m0_kwZ2%";
 $database = "rache827_rachelvidesign";

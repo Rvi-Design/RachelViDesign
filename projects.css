@@ -1,5 +1,8 @@
 /* ==================== projects.css ==================== */
-
+@keyframes bannerFade {
+    0% {opacity: 0%; }
+    100% {opacity: 100%;}
+}
 /* --- Page header --- */
 #projectsHeader {
     display: flex;
@@ -7,6 +10,10 @@
     background-image: url(Assets/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
+    animation-name: bannerFade;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 
 .bannerText {
@@ -138,7 +145,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: var(--B18AAB);
+    background-color: var(--PrimaryDark);
     color: white;
     font-family: var(--InfoFont);
     font-size: 0.95rem;
@@ -150,9 +157,35 @@
 }
 
 .downloadBtn:hover {
-    background-color: var(--73406A);
+    background-color: var(--PrimaryMid);
 }
 
+.carousel:fullscreen,
+.carousel:-webkit-full-screen {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    max-width: 100%;
+}
+
+.carousel:fullscreen .carouselTrack,
+.carousel:-webkit-full-screen .carouselTrack {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+button.fullscreenBtn {
+    background-color: var(--PrimaryMid);
+    opacity: 0.75;
+    border: none;
+    align-self: self-end;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    transition: background-color 0.25s ease-in-out;
+}
+button.fullscreenBtn:hover {
+    background-color: var(--PrimaryLight);
+}
 /* ==================== Mobile ==================== */
 @media screen and (max-width: 600px) {
 
