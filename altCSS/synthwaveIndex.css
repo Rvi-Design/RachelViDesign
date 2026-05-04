@@ -1,51 +1,18 @@
-
 /*--------------------------Tagline---------------------*/
-@keyframes taglineFade {
-    0% {opacity: 0%; transform: translateX(-200px); }
-    40% {opacity: 0%;}
-    100% {opacity: 100%; transform: translateX(-20px);}
-}
 #taglineLogo {
     justify-self: center;
-    display: grid;
-    grid-template-columns: min-content min-content;
-    grid-template-rows: min-content;
-    gap: 10rem;
+    display: flex;
+    background-image: URL(../Assets/altBgs/HeroOrange.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #taglineLogo svg {
-    grid-column: 2 / 3;
-    margin: 0;
-    padding: 0;
-    justify-self: center;
+    display: none;
 }
 #taglineLogo h1 {
-    grid-column: 1 / 2;
-    font-family: var(--LogoFont);
-    font-size: 5vw;
-    align-content: center;
-    margin: 0;
-    animation-name: taglineFade;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-    grid-row: 1 / 2;
-    font-weight: 300;
+    display: none;
 }
-
-
-  #span1 {
-    color:var(--PrimaryLight) ;
-  }
-
-  #span2 {
-    color:var(--PrimaryMid) ;
-    margin-left: 20%;
-  }
-
-  #span3 {
-    color:var(--PrimaryDark) ;
-    margin-left: 40%;
-  }
 
 
 /*--------------------------About Me--------------------*/
@@ -69,14 +36,14 @@
     grid-row: 1 / 4;
     height: 849px;
     box-shadow: 43px 33px 58px 0 rgba(9, 19, 24, .4);
-    border-radius: 60px;
+    border-radius: 20px;
 }
 
 #aboutMe p {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     font-family: var(--BodyFont);
-    color: #fff;
+    color: var(--PrimaryLight);
     padding: 5%;
     margin: 0;
     font-size: 1.5rem;
@@ -105,7 +72,7 @@
 }
 
 .transitionButtons {
-    background-image: linear-gradient(#B18AAB);
+    background-image: #4E2315;
     position: relative;
     border-radius: 25px;
     border: none;
@@ -123,7 +90,7 @@
 .transitionButtons span {
   z-index: 1;
   position: relative;
-  color: white;
+  color: var(--PrimaryLight);
 }
 
 .transitionButtons::before {
@@ -139,13 +106,13 @@
 }
 
 #web::before { 
-  background-image: url(Assets/Web.png); 
+  background-image: url(../Assets/altBgs/OrangeWebButton.png); 
 }
 #graphic::before { 
-  background-image: url(Assets/Graphic.png); 
+  background-image: url(../Assets/altBgs/OrangeLogoButton.png) 
 }
 #art::before { 
-  background-image: url(Assets/Art.png); 
+  background-image: url(../Assets/altBgs/OrangeArtButton.png); 
 }
 
 #web:hover::before,
@@ -167,16 +134,15 @@
 .skills h2 {
     grid-column: 2 / 3;
 }
-
 #boxesContainer {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    display: grid;
-    grid-template-columns: min-content min-content;
-    grid-template-rows: min-content min-content;
-    padding: 10px 2rem;
-    gap: 2rem;
+    background-image: url(../Assets/altBgs/brickBack.png);
+    
 }
+
+#boxesContainer img{
+ display: none;
+}
+
 
 #sideBlurb {
     grid-column: 2 / 3;
@@ -216,7 +182,7 @@
 }
 
 .skillsList li {
-  color: #fff;
+  color: var(--PrimaryLight);
 }
 
 
@@ -325,7 +291,7 @@ display: none;
 }
 
 #ulBox ul li {
-  color: #FFF;
+  color: var(--PrimaryLight);
   font-weight: 700;
   font-family: var(--HeaderFont);
 }

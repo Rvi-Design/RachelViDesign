@@ -1,24 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Berkshire+Swash&family=Comfortaa:wght@300..700&family=Questrial&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Capriola&family=Questrial&display=swap');
 *{
     box-sizing: border-box;
 }
 
 :root {
-    --background: #281330;
-    --PrimaryLight: #CEA9D9;
-    --PrimaryMid: #9669A4;
-    --PrimaryDark: #85449A;
+    --background: linear-gradient(to bottom, #49011D, #901030);
+    --PrimaryLight: #ffffff;
+    --PrimaryMid: #6A0724;
+    --PrimaryDark: #280010;
 
-    --AccentColour: #F977AF;
+    --AccentLight:#C63B5E;
+    --AccentMid:#971132;
     --AccentDark: #1E121A;
 
+    --SectionTransparent: rgba(0,0,0,0.25);
 
-    --boxShadow: 4px 4px 4px 4px rgba(46, 24, 49, 0.25);
+
+    --boxShadow: -18px 12px 0px 20px rgba(46, 24, 49, 0.25);
     --innerShadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
 
-    --LogoFont: "Berkshire Swash";
-    --HeaderFont: "Comfortaa";
+    --LogoFont: "Capriola";
+    --HeaderFont: "Amiko";
     --InfoFont: "Questrial";
     --BodyFont: "Bellota Text";
 
@@ -31,7 +33,6 @@
     text-decoration: none;
     grid-column: 1 / 2;
 }
-
 #Rachel, #Vi, #Design {
     transition: color 0.25s ease;
 }
@@ -66,12 +67,12 @@ h3 {
 
 
 .icon {
-   fill: #CEA9D9; 
+   fill: var(--AccentLight); 
    filter: drop-shadow(4px 4px 4px 4px rgba(0, 0, 0, 0.25));
    transition: fill ease-in-out .25s;
 }
 .icon:hover {
-    fill: #9669A4;
+    fill: var(--AccentMid);
 }
 
 body {
@@ -106,7 +107,7 @@ nav {
 }
 nav p{
     grid-column: 1/2;
-    color: var(--73406A);
+    color: var(--PrimaryLight);
 }
 nav ul {
     grid-column: 2 / 3;
@@ -137,83 +138,9 @@ nav ul li a:hover {
 nav svg {
     display: none;
 }
-
-#themeSwitcher {
-    position: relative;
-    align-self: center;
-}
-
-#themeToggle {
-    all: unset;
-    font-family: var(--BodyFont);
-    font-size: 1.5rem;
-    color: var(--PrimaryLight);
-    cursor: pointer;
-    transition: color 0.25s ease-in-out;
-}
-
-#themeToggle:hover {
-    color: var(--PrimaryMid);
-}
-
-#themeDropdown {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: calc(100% + 0.5rem);
-    right: 0;
-    background-color: var(--AccentDark);
-    border-radius: 8px;
-    box-shadow: var(--boxShadow);
-    padding: 0.5rem;
-    gap: 0.25rem;
-    z-index: 100;
-    min-width: 160px;
-}
-
-#themeDropdown.open {
-    display: flex;
-}
-
-.themeBtn {
-    all: unset;
-    font-family: var(--BodyFont);
-    font-size: 1rem;
-    color: var(--AccentColour);
-    padding: 0.5rem 0.75rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    width: 100%;
-}
-
-.themeBtn:hover {
-    background-color: var(--background);
-}
-
-.themeBtn.active {
-    background-color: var(--AccentColour);
-    color: white;
-}
-
-@media screen and (max-width: 600px) {
-    #themeToggle {
-        font-size: 0;        
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
-        background-color: var(--PrimaryDark);
-        display: block;
-    }
-
-    #themeDropdown {
-        right: auto;
-        left: 0;
-    }
-}
 /*--------------------------CTA Banner--------------------*/
 .ctaBanner {
-    background-image: linear-gradient(to right, #B157A2, #F977AF);
+    background-image: linear-gradient(to right, #46001C, #951131);
     display: grid;
     grid-template-rows: auto;
     margin: 0 0 10% 0;
@@ -236,7 +163,7 @@ nav svg {
     color: #fff;
     font-size: 64px;
     font-family: var(--LogoFont);
-    background-color: var(-AccentDark);
+    background-color: var(--AccentDark);
     border-radius: 25px;
     box-shadow: var(--boxShadow);
     text-align: center;
@@ -250,13 +177,13 @@ nav svg {
 }
 /*------------------Footer--------------------*/
 footer {
-    background-image: url(Assets/footerBG.png);
+    background-image: none;
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: auto;
     margin: 0;
     padding: 1rem;
-    box-shadow: 0px -20px 60px rgba(30, 13, 36, 1);
+    box-shadow: none;
 }
 
 .leftFoot {
@@ -291,7 +218,7 @@ footer {
     align-content: end;
     font-size: 1.5rem;
     font-family: var(--InfoFont);
-    color: #8C6599;
+    color: var(--PrimaryDark);
 }
 
 .rightFoot {
@@ -327,130 +254,20 @@ footer a:hover {
     color: var(--PrimaryDark);
 }
 
+
+
+#R{
+    fill: var(--PrimaryDark);
+}
+
+#V {
+    fill: var(--AccentLight);
+}
+
+#I {
+    fill: var(--AccentMid);
+}
+
 #mobileWordmark {
     display: none;
-}
-
-/*-----------------------Media Queries-------------------*/
-@media screen and (max-width: 600px) {
-
-/* body {
-    padding: 0 5%;
-} */
-
-.category {
-    font-size: 2rem;
-    padding: 0 1rem 0 0;
-}
-
-nav {
-    grid-template-columns: min-content auto;
-    grid-template-rows: min-content;
-    padding: 0;
-}
-
-#menuToggle {
-    display: block;
-    cursor: pointer;
-}
-
-#menuToggle svg {
-    transition: fill .25s ease-in-out,
-                transform 0.25s ease-in-out;
-}
-
-.navLinks {
-    display: none;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 1rem;
-    gap: 0;
-    font-size: 2rem;
-}
-
-.navLinks {
-  display: none;
-  flex-direction: column;
-  font-size: 2rem;
-}
-
-.siteNav.is-open .navLinks {
-  display: flex;
-}
-
-
-.siteNav.is-open #menuToggle svg {
-  fill: var(--B18AAB);
-  transform: rotate(90deg);
-}
-
-  .navLinks.is-open {
-    display: flex;
-  }
-  
-
-.wordmark {
-    font-size: 1.5rem;
-    grid-column: 2/3;
-    padding: 0;
-    margin: 0;
-    align-content: center;
-}
-
-  nav svg {
-    display: block;
-    align-self: center;
-  }
-
-
-  /* ------CTA */
-
-.ctaBanner {
-    display: none;
-}
-
-  /* ------footer */
-
-    footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1.5rem;
-  }
-
- #footerSVGs {
-    display: flex;
-    flex-direction: row;
-    gap: 15%;
-    justify-content: center;
-  }
-
-#footerLinks {
-    gap: 5%;
-    justify-content: center;
-    text-align: center;
-    font-size: 4.5vw;
-    margin: 0;
-    padding: 0;
-  }
-
-  #copyright {
-    font-size: 1rem;
-  }
-
-  .footerImg {
-    margin: 0;
-    padding: 0;
-  }
-  footer img:last-of-type {
-    display: none;
-  }
-  #vertWordmark {
-    display: none;
-  }
-
-  #mobileWordmark {
-    display: block;
-  }
 }

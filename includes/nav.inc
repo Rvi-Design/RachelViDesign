@@ -15,4 +15,26 @@
             <li><a href="contact.php">Contact</a></li>
             <li><a href="about.php">About</a></li>
         </ul>
+        <div id="themeSwitcher">
+            <button id="themeToggle" aria-label="Toggle theme menu" aria-expanded="false">
+                Theme
+            </button>
+
+            <div id="themeDropdown" role="menu">
+                <button class="themeBtn" data-theme="theme-global" 
+                        onclick="setTheme('theme-global')" title="Violet">
+                    ✦ Default
+                </button>
+
+                <button class="themeBtn" data-theme="theme-marble" 
+                        onclick="setTheme('theme-marble')" title="Marble">
+                    ◆ Professional
+                </button>
+                
+                <button class="themeBtn" data-theme="theme-synthwave" 
+                        onclick="setTheme('theme-synthwave')" title="Synth Wave">
+                    ◈ Dark
+                </button>
+            </div>
+        </div>
     </nav>
