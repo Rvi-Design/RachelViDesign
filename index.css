@@ -236,7 +236,7 @@
 
   #taglineLogo h1 {
     grid-column: 2/3;
-    font-family: var(--HeaderFont);
+    font-family: var(--Comfortaa);
     color: var(--73406A);
     font-size: 3vw;
     padding: 0;
@@ -327,7 +327,7 @@ display: none;
 #ulBox ul li {
   color: #FFF;
   font-weight: 700;
-  font-family: var(--HeaderFont);
+  font-family: var(--Comfortaa);
 }
 
 }

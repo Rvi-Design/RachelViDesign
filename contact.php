@@ -1,7 +1,18 @@
 
 <?php
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
 
 require('includes/connection.php');
+
+// $id = 1;
+// $sql = "SELECT contacts.name FROM contacts WHERE contacts.ID = $id";
+
+// $result = mysqli_query($connection, $sql);
+// if ($row = mysqli_fetch_assoc($result)) {
+//     echo $row['name']; 
+// }
+// Sanity check - Success. IS CONNECTED!!
 
 $errors = [];
 $success = false;
@@ -166,18 +177,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div id="submitRow">
                 <button type="submit" id="submitBtn">Submit</button>
             </div>
-
-            <div id="submitRow">
-                <button type="submit" id="submitBtn">
-                    Submit
-                </button>
-
-                <div id="loadingIndicator">
-                    <span class="spinner"></span>
-                    <span>
-                        Sending your message...</span>
-                </div>
-        </div>
 
         </form>
         <?php endif; ?>

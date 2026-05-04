@@ -19,7 +19,7 @@
 .bannerText {
     font-size: 150px;
     text-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-    font-family: var(--HeaderFont);
+    font-family: var(--Comfortaa);
     color: #fff;
     margin: 0;
 }
@@ -137,7 +137,7 @@
 }
 
 .slideCounter {
-    font-family: var(--HeaderFont);
+    font-family: var(--Comfortaa);
     font-size: 0.9rem;
     color: var(--PrimaryLight);
 }
