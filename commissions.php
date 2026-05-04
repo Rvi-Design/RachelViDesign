@@ -7,9 +7,9 @@ require('includes/connection.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rachel Vi Design || Commissions</title>
-    <link rel="stylesheet" href="global.css">
+    <?php include 'includes/requiredLinks.inc'; ?>
     <link rel="stylesheet" href="commissions.css">
-    <link rel="icon" type="image/png" href="assets/favicon.ico">
+
 </head>
 <body>
     <!----------------------Navigation bar------------------>

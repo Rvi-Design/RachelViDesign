@@ -7,10 +7,9 @@ require('includes/connection.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rachel Vi Design || Projects</title>
-    <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="global.css">
-        <link rel="icon" type="image/png" href="assets/favicon.ico">
     <?php include 'includes/requiredLinks.inc'; ?>
+    <link rel="stylesheet" href="projects.css">
+
 </head>
 <body>
 

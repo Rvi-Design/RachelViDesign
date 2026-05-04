@@ -270,65 +270,65 @@ footer a:hover {
     padding: 0 1rem 0 0;
 }
 
-nav {
-    grid-template-columns: min-content auto;
-    grid-template-rows: min-content;
-    padding: 0;
-}
+ nav {
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: min-content auto;
+        padding: 0.5rem;
+        align-items: center;
+    }
 
-#menuToggle {
-    display: block;
-    cursor: pointer;
-}
+    #menuToggle {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
 
-#menuToggle svg {
-    transition: fill .25s ease-in-out,
-                transform 0.25s ease-in-out;
-}
+    .wordmark {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+        align-content: center;
+    }
 
-.navLinks {
-    display: none;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 1rem;
-    gap: 0;
-    font-size: 2rem;
-}
+    .navLinks {
+        grid-column: 1 / 3;  /* span full width */
+        grid-row: 2 / 3;
+        display: none;
+        flex-direction: column;
+        padding: 0.5rem 0;
+        margin: 0;
+        list-style: none;
+        gap: 0;
+    }
 
-.navLinks {
-  display: none;
-  flex-direction: column;
-  font-size: 2rem;
-}
+    .siteNav.is-open .navLinks {
+        display: flex;
+    }
 
-.siteNav.is-open .navLinks {
-  display: flex;
-}
+    .navLinks li {
+        width: 100%;
+    }
 
+    .navLinks li a {
+        display: block;
+        padding: 0.75rem 1rem;
+        font-size: 1.4rem;
+        border-bottom: 1px solid rgba(115, 64, 106, 0.15);
+    }
 
-.siteNav.is-open #menuToggle svg {
-  fill: var(--B18AAB);
-  transform: rotate(90deg);
-}
+    nav svg {
+        display: block;
+    }
 
-  .navLinks.is-open {
-    display: flex;
-  }
-  
-
-.wordmark {
-    font-size: 1.5rem;
-    grid-column: 2/3;
-    padding: 0;
-    margin: 0;
-    align-content: center;
-}
-
-  nav svg {
-    display: block;
-    align-self: center;
-  }
-
+    .siteNav.is-open #menuToggle svg {
+        fill: var(--B18AAB);
+        transform: rotate(90deg);
+    }
+}  
 
   /* ------CTA */
 
@@ -380,4 +380,3 @@ nav {
   #mobileWordmark {
     display: block;
   }
-}

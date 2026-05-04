@@ -10,9 +10,8 @@ require('includes/connection.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rachel Vi Design || Home</title>
+    <?php include 'includes/requiredLinks.inc'; ?>    
     <link rel="stylesheet" href="index.css">
-    <?php include 'includes/requiredLinks.inc';?>
-        <link rel="icon" type="image/png" href="assets/favicon.ico">
 
 </head>
 <body>

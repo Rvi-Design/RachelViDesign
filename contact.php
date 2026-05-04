@@ -1,18 +1,6 @@
 
 <?php
-// ini_set('display_errors', 1);
-// error_reporting(E_ALL);
-
 require('includes/connection.php');
-
-// $id = 1;
-// $sql = "SELECT contacts.name FROM contacts WHERE contacts.ID = $id";
-
-// $result = mysqli_query($connection, $sql);
-// if ($row = mysqli_fetch_assoc($result)) {
-//     echo $row['name']; 
-// }
-// Sanity check - Success. IS CONNECTED!!
 
 $errors = [];
 $success = false;
@@ -78,10 +66,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rachel Vi Design || Contact</title>
-    <link rel="stylesheet" href="index.css">
+    <?php include 'includes/requiredLinks.inc'; ?>    
     <link rel="stylesheet" href="contact.css">
-        <link rel="icon" type="image/png" href="assets/favicon.ico">
-    <?php include 'includes/requiredLinks.inc'; ?>
 </head>
 <body>
 
@@ -176,6 +162,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div id="submitRow">
                 <button type="submit" id="submitBtn">Submit</button>
+            </div>
+
+            <div id="loadingIndicator">
+                <span class="spinner"></span>
+                <span>
+                    Sending your message...</span>
             </div>
 
         </form>
