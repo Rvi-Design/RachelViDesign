@@ -70,6 +70,7 @@ require('includes/connection.php');
 </main>
 <!-----------------------Footer------------------------>   
 <?php include 'includes/footer.inc'; ?>
+<script src="menuToggle.js"></script>
 
 
 

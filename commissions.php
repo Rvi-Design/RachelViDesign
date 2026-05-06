@@ -32,6 +32,7 @@ require('includes/connection.php');
 </main>
 
 <?php include 'includes/footer.inc'; ?>
+<script src="menuToggle.js"></script>
     
 </body>
 </html>

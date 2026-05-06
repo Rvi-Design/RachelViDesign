@@ -75,7 +75,7 @@ require('includes/connection.php');
             </button>
 
             <button class="fullscreenBtn" aria-label="Toggle fullscreen"> 
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="var(--Lightest)fff" viewBox="0 0 256 256">
                 <path d="M216,48V88a8,8,0,0,1-16,0V67.31l-37.34,37.35a8,8,0,0,1-11.32-11.32L188.69,56H168a8,8,0,0,1,0-16h40A8,8,0,0,1,216,48ZM93.66,141.34,56,178.69V158a8,8,0,0,0-16,0v40a8,8,0,0,0,8,8H88a8,8,0,0,0,0-16H67.31l37.35-37.34a8,8,0,0,0-11.32-11.32Z"/>
                 </svg>
             </button>
@@ -143,7 +143,7 @@ require('includes/connection.php');
                 </svg>
             </button>
             <button class="fullscreenBtn" aria-label="Toggle fullscreen"> 
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="var(--Lightest)fff" viewBox="0 0 256 256">
                 <path d="M216,48V88a8,8,0,0,1-16,0V67.31l-37.34,37.35a8,8,0,0,1-11.32-11.32L188.69,56H168a8,8,0,0,1,0-16h40A8,8,0,0,1,216,48ZM93.66,141.34,56,178.69V158a8,8,0,0,0-16,0v40a8,8,0,0,0,8,8H88a8,8,0,0,0,0-16H67.31l37.35-37.34a8,8,0,0,0-11.32-11.32Z"/>
                 </svg>
             </button>
@@ -209,7 +209,7 @@ require('includes/connection.php');
                 </svg>
             </button>
             <button class="fullscreenBtn" aria-label="Toggle fullscreen"> 
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="var(--Lightest)fff" viewBox="0 0 256 256">
                 <path d="M216,48V88a8,8,0,0,1-16,0V67.31l-37.34,37.35a8,8,0,0,1-11.32-11.32L188.69,56H168a8,8,0,0,1,0-16h40A8,8,0,0,1,216,48ZM93.66,141.34,56,178.69V158a8,8,0,0,0-16,0v40a8,8,0,0,0,8,8H88a8,8,0,0,0,0-16H67.31l37.35-37.34a8,8,0,0,0-11.32-11.32Z"/>
                 </svg>
             </button>

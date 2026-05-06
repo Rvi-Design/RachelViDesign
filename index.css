@@ -76,7 +76,7 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     font-family: var(--BodyFont);
-    color: #fff;
+    color: var(--Lightest);
     padding: 5%;
     margin: 0;
     font-size: 1.5rem;
@@ -216,7 +216,7 @@
 }
 
 .skillsList li {
-  color: #fff;
+  color: var(--Lightest);
 }
 
 
@@ -265,7 +265,7 @@
 
 #aboutMe p {
   font-family: var(--BodyFont);
-  color: var(--2F2F2F);
+  color: var(--Lightest);
   padding: 5%;
   margin: 0;
   font-size: 15px;
@@ -301,7 +301,7 @@ display: none;
 #sideBlurb {
     font-family: var(--BodyFont);
     font-size: clamp(1rem, 2.5vw, 1.5rem);
-    color: var(--2F2F2F);
+    color: var(--Lightest);
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -325,7 +325,7 @@ display: none;
 }
 
 #ulBox ul li {
-  color: #FFF;
+  color: var(--Lightest);
   font-weight: 700;
   font-family: var(--Comfortaa);
 }

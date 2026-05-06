@@ -9,6 +9,7 @@
     --PrimaryLight: #CEA9D9;
     --PrimaryMid: #9669A4;
     --PrimaryDark: #85449A;
+    --Lightest: var(--Lightest);
 
     --AccentPink: #F977AF;
     --AccentBlack: #1E121A;
@@ -27,7 +28,7 @@
 .wordmark {
     font-family: var(--LogoFont);
     font-size: 4vw;
-    color: #fff;
+    color: var(--Lightest);
     text-decoration: none;
     grid-column: 1 / 2;
 }
@@ -50,7 +51,7 @@
 
 h2 {
     font-family: var(--LogoFont);
-    color: #fff;
+    color: var(--Lightest);
     font-size: 6vw;
     text-align: right;
     padding-right: 10%;
@@ -85,7 +86,7 @@ section {
 
 section p {
     font-family: var(--BodyFont);
-    color: #fff;
+    color: var(--Lightest);
 }
 
 .backButton {
@@ -114,7 +115,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    color: #fff;
+    color: var(--Lightest);
     font-family: var(--InfoFont);
     margin: 0;
     padding: 0;
@@ -127,7 +128,7 @@ nav ul li {
 }
 
 nav ul li a{
-    color:  #fff;
+    color:  var(--Lightest);
     transition: color ease-in-out .25s;
     font-weight: 300;
 }
@@ -160,7 +161,7 @@ nav svg {
     text-decoration: none;
     justify-self: center;
     align-self: center;
-    color: #fff;
+    color: var(--Lightest);
     font-size: 64px;
     font-family: var(--LogoFont);
     background-color: var(--AccentBlack);
@@ -207,7 +208,7 @@ footer {
     justify-content: space-evenly;
     font-size: 2vw;
     font-family: var(--InfoFont);
-    color: #fff;
+    color: var(--Lightest);
 }
 
 #copyright {
@@ -230,7 +231,7 @@ footer {
 #vertWordmark {
     grid-row: 1 / 4;
     margin: 0;
-    color: #fff;
+    color: var(--Lightest);
     text-align: right;
 }
 
@@ -247,7 +248,7 @@ footer ul {
 }
 footer a {
     transition: color 0.25s ease-in-out;
-    color: #fff;
+    color: var(--Lightest);
     font-weight: 300;
 }
 footer a:hover {
