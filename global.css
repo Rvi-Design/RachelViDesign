@@ -1,66 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Berkshire+Swash&family=Comfortaa:wght@300..700&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Forum&family=Questrial&display=swap');
 
 *{
     box-sizing: border-box;
 }
 
 :root {
-    --background: #281330;
-    --PrimaryLight: #CEA9D9;
-    --PrimaryMid: #9669A4;
-    --PrimaryDark: #85449A;
-    --Lightest: var(--Lightest);
+    --background: linear-gradient(to bottom, #F5F0EA, #3B507D);
+    --PrimaryLight: #F5F0EA;
+    --PrimaryMid: #3B507D;
+    --PrimaryDark: #112250;
+    --Text: #ffffff;
 
-    --AccentPink: #F977AF;
-    --AccentBlack: #1E121A;
+    --AccentLight: #A7BDCB;
+    --AccentMid: #806345;
+    --AccentBlack: #202020;
 
+    --Icons: #CDB495;
 
     --boxShadow: 4px 4px 4px 4px rgba(46, 24, 49, 0.25);
     --innerShadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
 
-    --LogoFont: "Berkshire Swash";
-    --Comfortaa: "Comfortaa";
-    --InfoFont: "Questrial";
-    --BodyFont: "Bellota Text";
+    --LogoFont: "Aboreto";
+    --SecondaryFont: "Questrial";
+    --InfoFont: "Forum";
+    --BodyFont: "Bellota", system-ui;
 
 }
 
 .wordmark {
     font-family: var(--LogoFont);
     font-size: 4vw;
-    color: var(--Lightest);
+    color: var(--PrimaryDark);
     text-decoration: none;
     grid-column: 1 / 2;
 }
 *
-
-#Rachel, #Vi, #Design {
+.Wordmark #Rachel #Vi #Design{
     transition: color 0.25s ease;
 }
 
-.wordmark:hover #Rachel {
-    color: var(--PrimaryLight);
-}
-
-.wordmark:hover #Vi {
+.wordmark #Rachel #Design:hover {
     color: var(--PrimaryMid);
 }
-.wordmark:hover #Design {
-    color: var(--PrimaryDark);
+
+.wordmark #Vi:hover {
+    color: var(--AccentMid);
 }
+
 
 h2 {
     font-family: var(--LogoFont);
-    color: var(--Lightest);
+    color: var(--PrimaryDark);
     font-size: 6vw;
     text-align: right;
-    padding-right: 10%;
+    padding-right: 5%;
     font-weight: 300;
     margin: 0;
 }
 h3 {
-    font-family: var(--Comfortaa);
-    color: var(--PrimaryLight);
+    font-family: var(--SecondaryFont);
+    color: var(--PrimaryMid);
 }
 .catLeft {
     text-align: left;
@@ -68,25 +67,32 @@ h3 {
 
 
 .icon {
-   fill: #CEA9D9; 
+   fill: var(--Icons); 
    filter: drop-shadow(4px 4px 4px 4px rgba(0, 0, 0, 0.25));
    transition: fill ease-in-out .25s;
 }
 .icon:hover {
-    fill: #9669A4;
+    fill: var(--AccentMid);
 }
 
 body {
-    background-color: var(--background);
+    background-image: var(--background);
+    
+}
+
+main {
+    margin: 0;
+    padding: 0;
 }
 
 section {
     margin: 10% 0;
+    border-radius: 5px;
 }
 
 section p {
     font-family: var(--BodyFont);
-    color: var(--Lightest);
+    color: var(--Text);
 }
 
 .backButton {
@@ -115,7 +121,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    color: var(--Lightest);
+    color: var(--Text);
     font-family: var(--InfoFont);
     margin: 0;
     padding: 0;
@@ -128,12 +134,12 @@ nav ul li {
 }
 
 nav ul li a{
-    color:  var(--Lightest);
+    color:  var(--PrimaryMid);
     transition: color ease-in-out .25s;
     font-weight: 300;
 }
 nav ul li a:hover {
-    color: var(--PrimaryDark);
+    color: var(--AccentMid);
 }
 
 nav svg {
@@ -141,7 +147,10 @@ nav svg {
 }
 /*--------------------------CTA Banner--------------------*/
 .ctaBanner {
-    background-image: linear-gradient(to right, #B157A2, #F977AF);
+    background-image: url(Assets/BannerCTA.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-rows: auto;
     margin: 0 0 10% 0;
@@ -151,7 +160,7 @@ nav svg {
 .ctaBanner p {
     grid-column: 1 / 2;
     font-family: var(--InfoFont);
-    color: white;
+    color: var(--PrimaryLight);
     font-size: 68px;
     padding: 1rem;
     margin: 0;
@@ -161,30 +170,29 @@ nav svg {
     text-decoration: none;
     justify-self: center;
     align-self: center;
-    color: var(--Lightest);
+    color: var(--Text);
     font-size: 64px;
     font-family: var(--LogoFont);
     background-color: var(--AccentBlack);
     border-radius: 25px;
     box-shadow: var(--boxShadow);
     text-align: center;
-    transition: background-color .25s ease-in-out;
+    transition: all .25s ease-in-out;
     padding: 1rem;
 }
 
 * 
 .bannerButton:hover {
-    background-color: #43254e;
+    background-color: var(--AccentMid);
 }
 /*------------------Footer--------------------*/
 footer {
-    background-image: url(Assets/footerBG.png);
+    background-color: var(--AccentBlack);
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: auto;
     margin: 0;
     padding: 1rem;
-    box-shadow: 0px -20px 60px rgba(30, 13, 36, 1);
 }
 
 .leftFoot {
@@ -208,7 +216,12 @@ footer {
     justify-content: space-evenly;
     font-size: 2vw;
     font-family: var(--InfoFont);
-    color: var(--Lightest);
+    color: var(--PrimaryLight);
+    transition: color 0.25s ease-in-out;
+}
+
+#footerLinks li a:hover {
+    color: var(--AccentMid);
 }
 
 #copyright {
@@ -219,7 +232,7 @@ footer {
     align-content: end;
     font-size: 1.5rem;
     font-family: var(--InfoFont);
-    color: #8C6599;
+    color: var(--PrimaryMid);
 }
 
 .rightFoot {
@@ -231,8 +244,9 @@ footer {
 #vertWordmark {
     grid-row: 1 / 4;
     margin: 0;
-    color: var(--Lightest);
+    color: var(--Text);
     text-align: right;
+    font-family: "Cinzel Decorative", serif;
 }
 
 .footerImg {
@@ -248,11 +262,15 @@ footer ul {
 }
 footer a {
     transition: color 0.25s ease-in-out;
-    color: var(--Lightest);
+    color: var(--PrimaryLight);
     font-weight: 300;
 }
 footer a:hover {
-    color: var(--PrimaryDark);
+    fill: var(--Icons);
+    transition: fill 0.25s ease-in-out;
+}
+footer a svg:hover {
+    fill: var(--AccentMid);
 }
 
 #mobileWordmark {
@@ -329,7 +347,7 @@ footer a:hover {
         fill: var(--B18AAB);
         transform: rotate(90deg);
     }
-}  
+ 
 
   /* ------CTA */
 
@@ -343,7 +361,6 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 1.5rem;
   }
 
@@ -352,6 +369,11 @@ footer a:hover {
     flex-direction: row;
     gap: 15%;
     justify-content: center;
+  }
+
+  .icon {
+    height: 50px;
+    width: 50px;
   }
 
 #footerLinks {
@@ -367,9 +389,22 @@ footer a:hover {
     font-size: 1rem;
   }
 
+  .rightFoot {
+    display: flex;
+    gap: 1rem;
+}
+
   .footerImg {
     margin: 0;
     padding: 0;
+    width: 150px;
+    height: 150px;
+    }
+  }
+
+  .footerImg svg {
+    width: 80%;
+    height: auto;
   }
   footer img:last-of-type {
     display: none;
@@ -380,4 +415,6 @@ footer a:hover {
 
   #mobileWordmark {
     display: block;
+    color: var(--AccentMid);
   }
+}

@@ -1,51 +1,26 @@
 
 /*--------------------------Tagline---------------------*/
-@keyframes taglineFade {
-    0% {opacity: 0%; transform: translateX(-200px); }
-    40% {opacity: 0%;}
-    100% {opacity: 100%; transform: translateX(-20px);}
+@keyframes bannerFade {
+    0% {opacity: 0%; }
+    100% {opacity: 100%;}
 }
 #taglineLogo {
     justify-self: center;
-    display: grid;
-    grid-template-columns: min-content min-content;
-    grid-template-rows: min-content;
-    gap: 10rem;
-}
-#taglineLogo svg {
-    grid-column: 2 / 3;
     margin: 0;
-    padding: 0;
-    justify-self: center;
-}
-#taglineLogo h1 {
-    grid-column: 1 / 2;
-    font-family: var(--LogoFont);
-    font-size: 5vw;
-    align-content: center;
-    margin: 0;
-    animation-name: taglineFade;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 600px;
+    width: 100%;
+    animation-name: bannerFade;
     animation-duration: 2s;
     animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-    grid-row: 1 / 2;
-    font-weight: 300;
+    animation-fill-mode: forwards;    
+}
+#taglineLogo img {
+    width: 100%;
+    height: auto;
 }
 
-
-  #span1 {
-    color:var(--PrimaryLight) ;
-  }
-
-  #span2 {
-    color:var(--PrimaryMid) ;
-    margin-left: 20%;
-  }
-
-  #span3 {
-    color:var(--PrimaryDark) ;
-    margin-left: 40%;
-  }
 
 
 /*--------------------------About Me--------------------*/
@@ -56,6 +31,7 @@
     grid-template-rows: min-content min-content min-content;
     column-gap: 10%;
     height: 849px;
+    background: var(--PrimaryLight);
 }
 
 #aboutMe h2 {
@@ -76,11 +52,11 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     font-family: var(--BodyFont);
-    color: var(--Lightest);
+    color: var(--PrimaryDark);
     padding: 5%;
     margin: 0;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 #aboutLinks {
@@ -96,6 +72,7 @@
 #jumpLinks {
   padding: 1rem;
   padding-bottom: 3rem;
+  background-color: #D9CBC2;
 }
 
 #jumpLinkContainer {
@@ -105,13 +82,12 @@
 }
 
 .transitionButtons {
-    background-image: linear-gradient(#B18AAB);
+    background-image: url(Assets/goldButton.png);
     position: relative;
     border-radius: 25px;
     border: none;
     text-decoration: none;
     font-family: var(--InfoFont);
-    font-size: 5vw;
     width: 20%;
     text-align: center;
     align-content: center;
@@ -121,9 +97,12 @@
 }
 
 .transitionButtons span {
-  z-index: 1;
-  position: relative;
-  color: white;
+    z-index: 1;
+    position: relative;
+    color: var(--PrimaryLight);
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 .transitionButtons::before {
@@ -161,11 +140,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    margin-right: 5%;
+    background-color: var(--AccentBlack);
+    padding: 1rem 0;
 }
 
 .skills h2 {
     grid-column: 2 / 3;
+    color: var(--PrimaryLight);
 }
 
 #boxesContainer {
@@ -177,6 +158,37 @@
     padding: 10px 2rem;
     gap: 2rem;
 }
+
+.skillBox {
+    width: 340px;
+    height: 340px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skillBox h3 {
+    color: var(--PrimaryLight);
+    font-family: var(--InfoFont);
+    font-weight: 100;
+}
+
+#lightBlue {
+    background-color: var(--AccentLight);
+}
+#midBlue {
+   background-color: var(--PrimaryMid); 
+}
+#darkBlue {
+   background-color: var(--PrimaryDark); 
+}
+#midGold {
+   background-color: var(--AccentMid); 
+}
+
 
 #sideBlurb {
     grid-column: 2 / 3;
@@ -193,6 +205,7 @@
     grid-column: 1/3;
     padding: 0 1rem;
     text-indent: .5rem each-line;
+    color: var(--PrimaryLight);
 }
 #sideBlurb h3 {
     text-decoration: underline;
@@ -200,6 +213,7 @@
     grid-row: 2 / 3;
     margin: 0;
     margin-left: 1rem;
+    color: var(--Icons);
 }
 
 #sideBlurb h3:last-of-type {
@@ -216,7 +230,7 @@
 }
 
 .skillsList li {
-  color: var(--Lightest);
+  color: var(--Text);
 }
 
 
@@ -236,7 +250,7 @@
 
   #taglineLogo h1 {
     grid-column: 2/3;
-    font-family: var(--Comfortaa);
+    font-family: var(--SecondaryFont);
     color: var(--73406A);
     font-size: 3vw;
     padding: 0;
@@ -257,6 +271,7 @@
     flex-direction: column;
     padding: 0;
     row-gap: 0;
+    height: 500px;
 }
 
 #aboutArcContainer {
@@ -265,7 +280,7 @@
 
 #aboutMe p {
   font-family: var(--BodyFont);
-  color: var(--Lightest);
+  color: var(--PrimaryDark);
   padding: 5%;
   margin: 0;
   font-size: 15px;
@@ -281,17 +296,15 @@
 }
 
 #jumpLinks a {  
-font-size: 6vw;
 width: 50%;
-padding: 10% 0;
 border-radius: 10px;
 }
+.transitionButtons span {
+    font-size: 6vw; 
+}
 
-
-#boxesContainer {
-padding: 0;
-display: flex;
-flex-direction: column;
+.skills {
+    display: block;
 }
 
 .skillBoxList {
@@ -301,7 +314,7 @@ display: none;
 #sideBlurb {
     font-family: var(--BodyFont);
     font-size: clamp(1rem, 2.5vw, 1.5rem);
-    color: var(--Lightest);
+    color: var(--Text);
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -310,9 +323,7 @@ display: none;
 
 
 #boxesContainer {
-    padding: 0 1rem 1rem 1rem;
-    display: flex;
-    flex-direction: column;
+    display: none;
 }
 
 .skillBoxList {
@@ -325,9 +336,9 @@ display: none;
 }
 
 #ulBox ul li {
-  color: var(--Lightest);
+  color: var(--Text);
   font-weight: 700;
-  font-family: var(--Comfortaa);
+  font-family: var(--SecondaryFont);
 }
 
 }

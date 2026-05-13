@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 5% 0;
-    color: var(--Lightest);
+    color: var(--Text);
 }
 
 
@@ -52,7 +52,7 @@
 /* --- Labels --- */
 .formGroup label {
     font-family: var(--BodyFont);
-    color: var(--Lightest);
+    color: var(--Text);
     font-size: 1rem;
     font-weight: 700;
 }
@@ -102,7 +102,7 @@
     text-decoration: none;
     justify-self: center;
     align-self: center;
-    color: var(--Lightest);
+    color: var(--Text);
     font-family: var(--LogoFont);
     background-color: var(--PrimaryDark);
     border-radius: 5px;
