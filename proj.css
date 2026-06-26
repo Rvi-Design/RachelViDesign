@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Chango&family=Cherry+Bomb+One&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Forum&family=Idiqlat:wght@200;300;400&family=Kavoon&family=Nova+Round&family=Questrial&family=Rubik+Mono+One&display=swap');
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: var(--font-sans, system-ui); }
+
+.projects-wrapper {
+  padding: 2rem 0;
+  max-width: 860px;
+}
+
+.projects-header {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-family: "Questrial", Arial, Helvetica, sans-serif;
+  padding-left: 2%;
+}
+
+.project-card {
+    border: 0.5px solid #fff;
+    border-radius: 15px;
+    background: hsla(0, 0%, 100%, 0.234);
+    margin: 0 0 12px 2%;
+    overflow: hidden;
+    transition: border-color 0.2s;
+}
+
+
+.project-trigger {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+}
+
+.project-accent {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+.project-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-tagline {
+  font-size: 13px;
+}
+
+.project-tags {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+
+.tag-pink { background: #FBEAF0; color: #72243E; }
+.tag-blue { background: #E6F1FB; color: #0C447C; }
+.tag-teal { background: #E1F5EE; color: #085041; }
+
+.chevron {
+  flex-shrink: 0;
+  font-size: 18px;
+  color: var(--color-text-tertiary);
+  transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+
+.open .chevron {
+  transform: rotate(180deg);
+}
+
+.project-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.open .project-body {
+  grid-template-rows: 1fr;
+}
+
+.project-body-inner {
+  overflow: hidden;
+}
+
+.project-divider {
+  height: 0.5px;
+  margin: 0 1.5rem;
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.content-overview {
+  margin-bottom: 1.5rem;
+}
+
+.challenge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 99px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.section-title:first-child { margin-top: 0; }
+
+.body-text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.display, .displayMid, .displaySmall, .displayTiny {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.displayTiny img{
+    height: auto;
+    width: 20%;
+}
+
+.displaySmall img {
+    height: auto;
+    width: 40%;
+}
+
+.display img {
+    height: auto;
+    width: 70%;
+}
+
+.displayMid img{
+    height: auto;
+    width: 100%;
+}
+
+.image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 2rem;
+  font-size: 12px;
+  aspect-ratio: 4/3;
+}
+
+.image-placeholder i { font-size: 24px; }
+
+.coming-soon {
+  padding: 2.5rem;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.coming-soon i { font-size: 20px; }
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 1rem;
+}
+
+.step {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.step:last-child { border-bottom: none; }
+
+.step-num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 500;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.step-label {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.step-desc {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ---------Friendo-Pretendo------------- */
+#FriendoPretendo {
+    font-family: "Cherry Bomb One", system-ui;
+}
+
+#card-fp:hover {
+  border-color: #ffaabe;
+}
+
+#card-fp.open {
+  border-color: hsla(0, 0%, 0%, 0);
+    /* background-image: linear-gradient(to bottom, #FDEDF0, #FFF8F0, #FDEDF0); */
+    background-color: hsla(346, 81%, 73%, 0.2);
+}
+/* ------------My TrAIner----------------- */
+#MyTrainer {
+    font-family: "Rubik Mono One", monospace;
+}
+
+
+#card-mt:hover {
+  border-color: #FB923C;
+}
+#card-mt.open {
+  border-color: hsla(0, 0%, 0%, 0);
+    background-color: hsla(240, 35%, 24%, 0.20);
+}
+
+/* ----------------TuningFork-------------- */
+
+#TuningFork {
+    font-family: "Kavoon", serif;
+}
+
+
+#card-tf:hover {
+  border-color: #383678;
+}
+#card-tf.open {
+    border-color: hsla(0, 0%, 0%, 0);
+    background-color: hsl(51.96deg 87.42% 81.22% / 30%);
+}

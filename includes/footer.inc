@@ -10,8 +10,8 @@
 
         <ul id="footerLinks">
             <li><a href="index.php">Home</a></li>
-            <li><a href="projects.php">Projects</a></li>
-            <li><a href="commissions.php">Commissions</a></li>
+            <li><a href="projects.php">Portfolios</a></li>
+            <li><a href="projpage.php">projects</a></li>
             <li><a href="contact.php">Contact</a></li>            <li><a href="about.php">About</a></li>
 
         </ul>

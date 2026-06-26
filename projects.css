@@ -1,8 +1,10 @@
-/* ==================== projects.css ==================== */
+@import url('global.css');
+
 @keyframes bannerFade {
-    0% {opacity: 0%; }
-    100% {opacity: 100%;}
+    0%   { opacity: 0%; }
+    100% { opacity: 100%; }
 }
+ 
 /* --- Page header --- */
 #projectsHeader {
     display: flex;
@@ -15,7 +17,7 @@
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
-
+ 
 .bannerText {
     font-size: 150px;
     text-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
@@ -23,17 +25,17 @@
     color: var(--Text);
     margin: 0;
 }
-
+ 
 /* --- Portfolio section --- */
 .portfolioSection {
     padding: 2rem 5% 3rem;
     margin-bottom: 4rem;
 }
-
+ 
 .portfolioSection h2 {
     margin-bottom: 1.5rem;
 }
-
+ 
 /* --- Carousel wrapper --- */
 .carousel {
     position: relative;
@@ -47,16 +49,17 @@
     max-width: 960px;
     margin: 0 auto;
 }
-
+ 
 /* --- Slide track --- */
 .carouselTrack {
     flex: 1;
     position: relative;
-    /* landscape PDF aspect ratio — adjust if your PDFs differ */
     aspect-ratio: 16 / 9;
     overflow: hidden;
+    /* trying to add pinch zoom for mobile. */
+    touch-action: pan-y pinch-zoom;
 }
-
+ 
 .carouselSlide {
     position: absolute;
     inset: 0;
@@ -68,12 +71,12 @@
     pointer-events: none;
     user-select: none;
 }
-
+ 
 .carouselSlide.active {
     opacity: 1;
     pointer-events: auto;
 }
-
+ 
 /* --- Prev / Next buttons --- */
 .carouselBtn {
     all: unset;
@@ -90,18 +93,18 @@
     transition: background-color 0.2s ease-in-out, transform 0.15s ease;
     z-index: 2;
 }
-
+ 
 .carouselBtn:hover {
     background-color: var(--Icons);
     transform: scale(1.08);
 }
-
+ 
 .carouselBtn:disabled {
     opacity: 0.3;
     cursor: not-allowed;
     transform: none;
 }
-
+ 
 /* --- Dots --- */
 .dotsContainer {
     display: flex;
@@ -109,7 +112,7 @@
     gap: 8px;
     margin-top: 0.9rem;
 }
-
+ 
 .dot {
     width: 10px;
     height: 10px;
@@ -120,13 +123,13 @@
     padding: 0;
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
-
+ 
 .dot.active {
     background-color: var(--PrimaryLight);
     transform: scale(1.25);
 }
-
-/* --- Footer row (counter + download) --- */
+ 
+/* --- Footer row (counter + fullscreen + download) --- */
 .carouselFooter {
     display: flex;
     align-items: center;
@@ -135,12 +138,13 @@
     margin: 0.6rem auto 0;
     padding: 0 0.25rem;
 }
-
+ 
 .slideCounter {
     font-family: var(--SecondaryFont);
     font-size: 0.9rem;
     color: var(--PrimaryLight);
 }
+ 
 .downloadBtn {
     display: inline-flex;
     align-items: center;
@@ -152,27 +156,14 @@
     padding: 0.45rem 1.1rem;
     border-radius: 20px;
     text-decoration: none;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.25s ease-in-out;
 }
-
+ 
 .downloadBtn:hover {
     background-color: var(--PrimaryMid);
 }
-
-.carousel:fullscreen,
-.carousel:-webkit-full-screen {
-    display: flex;
-    align-items: center;
-    background-color: #000;
-    max-width: 100%;
-}
-
-.carousel:fullscreen .carouselTrack,
-.carousel:-webkit-full-screen .carouselTrack {
-    aspect-ratio: 16 / 9;
-    width: 100%;
-}
+ 
 button.fullscreenBtn {
     background-color: var(--PrimaryMid);
     opacity: 0.75;
@@ -182,40 +173,165 @@ button.fullscreenBtn {
     border-bottom-left-radius: 2px;
     border-top-right-radius: 2px;
     transition: background-color 0.25s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
 }
+ 
 button.fullscreenBtn:hover {
     background-color: var(--PrimaryLight);
+    opacity: 1;
 }
-/* ==================== Mobile ==================== */
-@media screen and (max-width: 600px) {
+ 
+/* ==================== Fullscreen — shared (desktop + mobile) ==================== */
+ 
+.carousel:fullscreen,
+.carousel:-webkit-full-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    gap: 0;
+    border-radius: 0;
+    overflow: hidden;
+}
+ 
 
+.carousel:fullscreen .carouselTrack,
+.carousel:-webkit-full-screen .carouselTrack {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+ 
+
+.carousel:fullscreen .carouselSlide,
+.carousel:-webkit-full-screen .carouselSlide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+ 
+.carousel:fullscreen .carouselSlide.active,
+.carousel:-webkit-full-screen .carouselSlide.active {
+    opacity: 1;
+}
+ 
+
+.carousel:fullscreen .carouselBtn,
+.carousel:-webkit-full-screen .carouselBtn {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    margin: 0;
+}
+ 
+.carousel:fullscreen .prevBtn,
+.carousel:-webkit-full-screen .prevBtn {
+    left: 1rem;
+}
+ 
+.carousel:fullscreen .nextBtn,
+.carousel:-webkit-full-screen .nextBtn {
+    right: 1rem;
+}
+ 
+
+.carousel:fullscreen .carouselFooter,
+.carousel:-webkit-full-screen .carouselFooter {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 8px;
+    padding: 0.3rem 0.6rem;
+    margin: 0;
+    max-width: unset;
+    gap: 0.75rem;
+    flex-direction: row;
+}
+ 
+
+.carousel:fullscreen .downloadBtn,
+.carousel:-webkit-full-screen .downloadBtn {
+    display: none;
+}
+ 
+
+.carousel:fullscreen .dotsContainer,
+.carousel:-webkit-full-screen .dotsContainer {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    margin: 0;
+}
+ 
+/* ==================== Mobile ==================== */
+ 
+@media screen and (max-width: 600px) {
+ 
     #projectsHeader {
         padding: 1rem 1rem 0;
     }
-
+ 
+    .bannerText {
+        font-size: 6vw;
+    }
+ 
     .portfolioSection {
         padding: 1.5rem 1rem 2rem;
     }
-
-    /* Hide arrow buttons on touch devices — swipe is used instead */
+ 
+  
     .carouselBtn {
         display: none;
     }
-
+ 
     .carousel {
         border-radius: 8px;
-        /* add a subtle touch indicator */
-        cursor: grab;
+        /* cursor: grab; */
+        /* temp remove to test pinch zoom */
     }
-
+ 
     .carouselFooter {
         flex-direction: column;
         gap: 0.75rem;
         align-items: center;
     }
-
+ 
     .downloadBtn {
         width: 100%;
         justify-content: center;
+    }
+ 
+    .fullscreenBtn {
+        width: 44px;
+        height: 44px;
+    }
+ 
+   
+    .carousel:fullscreen .carouselBtn,
+    .carousel:-webkit-full-screen .carouselBtn {
+        display: none;
     }
 }

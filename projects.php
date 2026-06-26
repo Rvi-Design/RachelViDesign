@@ -6,7 +6,7 @@ require('includes/connection.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rachel Vi Design || Projects</title>
+    <title>Rachel Vi Design || Portfolio</title>
     <?php include 'includes/requiredLinks.inc'; ?>
     <link rel="stylesheet" href="projects.css">
 
@@ -19,7 +19,7 @@ require('includes/connection.php');
 
     <div id="projectsHeader">
         <?php include 'includes/backButton.inc'; ?>
-        <p class="bannerText">Projects</p>
+        <p class="bannerText">Portfolios</p>
     </div>
 
     <!--------------------------GRAPHIC DESIGN--------------------------->
@@ -54,7 +54,7 @@ require('includes/connection.php');
 
                 <img src="Assets/GDport/GD-09.png" alt="Graphic Design Portfolio — Page 9" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-10.png" alt="Graphic Design Portfolio — Page 10" class="carouselSlide" loading = "lazy">
+                <!-- <img src="Assets/GDport/GD-10.png" alt="Graphic Design Portfolio — Page 10" class="carouselSlide" loading = "lazy">
 
                 <img src="Assets/GDport/GD-11.png" alt="Graphic Design Portfolio — Page 11" class="carouselSlide" loading = "lazy">
 
@@ -65,6 +65,19 @@ require('includes/connection.php');
                 <img src="Assets/GDport/GD-14.png" alt="Graphic Design Portfolio — Page 14" class="carouselSlide" loading = "lazy">
 
                 <img src="Assets/GDport/GD-15.png" alt="Graphic Design Portfolio — Page 15" class="carouselSlide" loading = "lazy">
+
+                <img src="Assets/GDport/GD-16.png" alt="Graphic Design Portfolio — Page 16" class="carouselSlide" loading = "lazy">
+
+                <img src="Assets/GDport/GD-17.png" alt="Graphic Design Portfolio — Page 17" class="carouselSlide" loading = "lazy">                
+                <img src="Assets/GDport/GD-18.png" alt="Graphic Design Portfolio — Page 18" class="carouselSlide" loading = "lazy">
+
+                <img src="Assets/GDport/GD-19.png" alt="Graphic Design Portfolio — Page 19" class="carouselSlide" loading = "lazy">
+
+                <img src="Assets/GDport/GD-20.png" alt="Graphic Design Portfolio — Page 20" class="carouselSlide" loading = "lazy">  
+
+                <img src="Assets/GDport/GD-21.png" alt="Graphic Design Portfolio — Page 21" class="carouselSlide" loading = "lazy">
+
+                <img src="Assets/GDport/GD-22.png" alt="Graphic Design Portfolio — Page 22" class="carouselSlide" loading = "lazy">  -->
 
             </div>
 
@@ -141,7 +154,11 @@ require('includes/connection.php');
 
                 <img src="Assets/WDport/WD-14.png" alt="Web Development Portfolio — Page 14" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-15.png" alt="Web Development Portfolio — Page 15" class="carouselSlide" loading = "lazy">                
+                <img src="Assets/WDport/WD-15.png" alt="Web Development Portfolio — Page 15" class="carouselSlide" loading = "lazy">    
+                
+                <img src="Assets/WDport/WD-16.png" alt="Web Development Portfolio — Page 16" class="carouselSlide" loading = "lazy">   
+                 
+                <img src="Assets/WDport/WD-17.png" alt="Web Development Portfolio — Page 17" class="carouselSlide" loading = "lazy">                    
       
             </div>
 
@@ -162,7 +179,7 @@ require('includes/connection.php');
 
         <div class="carouselFooter">
             <span class="slideCounter" id="counterWeb"></span>
-            <a href="assets/WDport/RPayette_WDPortfolio.pdf"
+            <a href="Assets/WDport/RPayette_WDPortfolio.pdf"
                download
                class="downloadBtn"
                aria-label="Download Web Development Portfolio PDF">

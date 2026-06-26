@@ -91,11 +91,13 @@ if (fullscreenBtn) {
     const SWIPE_THRESHOLD = 40; 
 
     track.addEventListener('touchstart', e => {
+        if (e.touches.length > 1) return;
         touchStartX = e.changedTouches[0].screenX;
         touchStartY = e.changedTouches[0].screenY;
     }, { passive: true });
 
     track.addEventListener('touchend', e => {
+        if (e.touches.length > 0) return;
         const dx = e.changedTouches[0].screenX - touchStartX;
         const dy = e.changedTouches[0].screenY - touchStartY;
 
