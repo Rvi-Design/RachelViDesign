@@ -59,12 +59,12 @@
 }
 
 #two {
-    background-image: url(Assets/about-02.jpeg);
+    background-image: url(Assets/about-02.jpg);
     background-position: 0% 26%;
 }
 
 #three {
-    background-image: url(Assets/about-03.jpeg);
+    background-image: url(Assets/about-03.jpg);
     background-position: center;
 }
 

@@ -140,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <textarea
                     id="reason"
                     name="reason"
-                    placeholder="I am a small business and would like to have a website built."
+                    placeholder="Need branding, a website, or design support? Tell me about your project"
                     rows="6"
                     maxlength="2000"
                     required><?= htmlspecialchars($_POST['reason'] ?? '') ?></textarea>

@@ -54,8 +54,8 @@ require('includes/connection.php');
 
                 <img src="Assets/GDport/GD-09.jpg" alt="Graphic Design Portfolio — Page 9" class="carouselSlide" loading = "lazy">
 
-                <!-- <img src="Assets/GDport/GD-10.jpg" alt="Graphic Design Portfolio — Page 10" class="carouselSlide" loading = "lazy">
-
+                <img src="Assets/GDport/GD-10.jpg" alt="Graphic Design Portfolio — Page 10" class="carouselSlide" loading = "lazy">
+<!-- 
                 <img src="Assets/GDport/GD-11.jpg" alt="Graphic Design Portfolio — Page 11" class="carouselSlide" loading = "lazy">
 
                 <img src="Assets/GDport/GD-12.jpg" alt="Graphic Design Portfolio — Page 12" class="carouselSlide" loading = "lazy">

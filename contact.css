@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 5% 0;
-    color: var(--Text);
+    color: var(--PrimaryDark);
+    font-family: var(--LogoFont);
 }
 
 

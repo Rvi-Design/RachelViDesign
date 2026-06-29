@@ -29,7 +29,7 @@ require('includes/connection.php');
             <h2>About Me</h2>
 
             <div id="aboutArcContainer">
-                <img src="Assets/AboutMePic.png" 
+                <img src="Assets/AboutMePic.jpg" 
                 alt="A photo of 'Rachel Payette', the owner of Rachel Vi Design, in a purple arch-shaped shape, with two circles above her head, mimicing the ink-splashed in the main logo"
                 height="849"
                 width="542"
