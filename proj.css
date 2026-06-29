@@ -308,6 +308,17 @@ body { font-family: var(--font-sans, system-ui); }
     background-color:hsla(0, 0%, 100%, 0.2);
 }
 
+/* ---------------Step images---------------- */
+.step-img {
+    text-align: center;
+    padding: 1rem 0 0.5rem;
+}
+
+.step-img img {
+    max-width: 90%;
+    border-radius: 8px;
+}
+
 /* -----------------Mobile------------------ */
 @media screen and (max-width: 600px) {
     .two-col {
