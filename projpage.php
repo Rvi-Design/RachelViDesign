@@ -755,15 +755,7 @@ require('includes/connection.php');
 <?php include 'includes/footer.inc'; ?>
 
 <script src="menuToggle.js"></script>
-
-<script>
-function toggle(id) {
-  const card = document.getElementById(id);
-  const isOpen = card.classList.contains('open');
-  card.classList.toggle('open', !isOpen);
-  card.querySelector('.project-trigger').setAttribute('aria-expanded', String(!isOpen));
-}
-</script>
+<script src="caseStudies.js"></script>
 
 </main>
 

@@ -57,6 +57,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $success = true;
     }
+
+    if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
+        header('Content-Type: application/json');
+        echo json_encode(
+            $success
+                ? ['success' => true, 'name' => $name]
+                : ['success' => false, 'error' => implode(' ', $errors)]
+        );
+        exit;
+    }
 }
 
 ?>

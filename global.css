@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Forum&family=Questrial&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
 }

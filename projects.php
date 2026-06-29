@@ -36,48 +36,48 @@ require('includes/connection.php');
 
             <div class="carouselTrack">
 
-                <img src="Assets/GDport/GD-01.png" alt="Graphic Design Portfolio — Page 1" class="carouselSlide active" loading = "lazy">
+                <img src="Assets/GDport/GD-01.jpg" alt="Graphic Design Portfolio — Page 1" class="carouselSlide active" loading = "lazy">
 
-                <img src="Assets/GDport/GD-02.png" alt="Graphic Design Portfolio — Page 2" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-02.jpg" alt="Graphic Design Portfolio — Page 2" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-03.png" alt="Graphic Design Portfolio — Page 3" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-03.jpg" alt="Graphic Design Portfolio — Page 3" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-04.png" alt="Graphic Design Portfolio — Page 4" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-04.jpg" alt="Graphic Design Portfolio — Page 4" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-05.png" alt="Graphic Design Portfolio — Page 5" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-05.jpg" alt="Graphic Design Portfolio — Page 5" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-06.png" alt="Graphic Design Portfolio — Page 6" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-06.jpg" alt="Graphic Design Portfolio — Page 6" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-07.png" alt="Graphic Design Portfolio — Page 7" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-07.jpg" alt="Graphic Design Portfolio — Page 7" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-08.png" alt="Graphic Design Portfolio — Page 8" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-08.jpg" alt="Graphic Design Portfolio — Page 8" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-09.png" alt="Graphic Design Portfolio — Page 9" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-09.jpg" alt="Graphic Design Portfolio — Page 9" class="carouselSlide" loading = "lazy">
 
-                <!-- <img src="Assets/GDport/GD-10.png" alt="Graphic Design Portfolio — Page 10" class="carouselSlide" loading = "lazy">
+                <!-- <img src="Assets/GDport/GD-10.jpg" alt="Graphic Design Portfolio — Page 10" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-11.png" alt="Graphic Design Portfolio — Page 11" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-11.jpg" alt="Graphic Design Portfolio — Page 11" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-12.png" alt="Graphic Design Portfolio — Page 12" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-12.jpg" alt="Graphic Design Portfolio — Page 12" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-13.png" alt="Graphic Design Portfolio — Page 13" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-13.jpg" alt="Graphic Design Portfolio — Page 13" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-14.png" alt="Graphic Design Portfolio — Page 14" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-14.jpg" alt="Graphic Design Portfolio — Page 14" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-15.png" alt="Graphic Design Portfolio — Page 15" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-15.jpg" alt="Graphic Design Portfolio — Page 15" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-16.png" alt="Graphic Design Portfolio — Page 16" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-16.jpg" alt="Graphic Design Portfolio — Page 16" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-17.png" alt="Graphic Design Portfolio — Page 17" class="carouselSlide" loading = "lazy">                
-                <img src="Assets/GDport/GD-18.png" alt="Graphic Design Portfolio — Page 18" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-17.jpg" alt="Graphic Design Portfolio — Page 17" class="carouselSlide" loading = "lazy">                
+                <img src="Assets/GDport/GD-18.jpg" alt="Graphic Design Portfolio — Page 18" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-19.png" alt="Graphic Design Portfolio — Page 19" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-19.jpg" alt="Graphic Design Portfolio — Page 19" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-20.png" alt="Graphic Design Portfolio — Page 20" class="carouselSlide" loading = "lazy">  
+                <img src="Assets/GDport/GD-20.jpg" alt="Graphic Design Portfolio — Page 20" class="carouselSlide" loading = "lazy">  
 
-                <img src="Assets/GDport/GD-21.png" alt="Graphic Design Portfolio — Page 21" class="carouselSlide" loading = "lazy">
+                <img src="Assets/GDport/GD-21.jpg" alt="Graphic Design Portfolio — Page 21" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/GDport/GD-22.png" alt="Graphic Design Portfolio — Page 22" class="carouselSlide" loading = "lazy">  -->
+                <img src="Assets/GDport/GD-22.jpg" alt="Graphic Design Portfolio — Page 22" class="carouselSlide" loading = "lazy">  -->
 
             </div>
 
@@ -126,39 +126,39 @@ require('includes/connection.php');
 
             <div class="carouselTrack">
 
-                <img src="Assets/WDport/WD-01.png" alt="Web Development Portfolio — Page 1" class="carouselSlide active" loading = "lazy">
+                <img src="Assets/WDport/WD-01.jpg" alt="Web Development Portfolio — Page 1" class="carouselSlide active" loading = "lazy">
 
-                <img src="Assets/WDport/WD-02.png" alt="Web Development Portfolio — Page 2" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-02.jpg" alt="Web Development Portfolio — Page 2" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-03.png" alt="Web Development Portfolio — Page 3" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-03.jpg" alt="Web Development Portfolio — Page 3" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-04.png" alt="Web Development Portfolio — Page 4" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-04.jpg" alt="Web Development Portfolio — Page 4" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-05.png" alt="Web Development Portfolio — Page 5" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-05.jpg" alt="Web Development Portfolio — Page 5" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-06.png" alt="Web Development Portfolio — Page 6" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-06.jpg" alt="Web Development Portfolio — Page 6" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-07.png" alt="Web Development Portfolio — Page 7" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-07.jpg" alt="Web Development Portfolio — Page 7" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-08.png" alt="Web Development Portfolio — Page 8" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-08.jpg" alt="Web Development Portfolio — Page 8" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-09.png" alt="Web Development Portfolio — Page 9" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-09.jpg" alt="Web Development Portfolio — Page 9" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-10.png" alt="Web Development Portfolio — Page 10" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-10.jpg" alt="Web Development Portfolio — Page 10" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-11.png" alt="Web Development Portfolio — Page 11" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-11.jpg" alt="Web Development Portfolio — Page 11" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-12.png" alt="Web Development Portfolio — Page 12" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-12.jpg" alt="Web Development Portfolio — Page 12" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-13.png" alt="Web Development Portfolio — Page 13" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-13.jpg" alt="Web Development Portfolio — Page 13" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-14.png" alt="Web Development Portfolio — Page 14" class="carouselSlide" loading = "lazy">
+                <img src="Assets/WDport/WD-14.jpg" alt="Web Development Portfolio — Page 14" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/WDport/WD-15.png" alt="Web Development Portfolio — Page 15" class="carouselSlide" loading = "lazy">    
+                <img src="Assets/WDport/WD-15.jpg" alt="Web Development Portfolio — Page 15" class="carouselSlide" loading = "lazy">    
                 
-                <img src="Assets/WDport/WD-16.png" alt="Web Development Portfolio — Page 16" class="carouselSlide" loading = "lazy">   
+                <img src="Assets/WDport/WD-16.jpg" alt="Web Development Portfolio — Page 16" class="carouselSlide" loading = "lazy">   
                  
-                <img src="Assets/WDport/WD-17.png" alt="Web Development Portfolio — Page 17" class="carouselSlide" loading = "lazy">                    
+                <img src="Assets/WDport/WD-17.jpg" alt="Web Development Portfolio — Page 17" class="carouselSlide" loading = "lazy">                    
       
             </div>
 
@@ -206,21 +206,21 @@ require('includes/connection.php');
 
             <div class="carouselTrack">
   
-                <img src="Assets/AWport/AW-01.png" alt="Artwork Portfolio — Page 1" class="carouselSlide active" loading = "lazy">
+                <img src="Assets/AWport/AW-01.jpg" alt="Artwork Portfolio — Page 1" class="carouselSlide active" loading = "lazy">
 
-                <img src="Assets/AWport/AW-02.png" alt="Artwork Portfolio — Page 2" class="carouselSlide" loading = "lazy">
+                <img src="Assets/AWport/AW-02.jpg" alt="Artwork Portfolio — Page 2" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/AWport/AW-03.png" alt="Artwork Portfolio — Page 3" class="carouselSlide" loading = "lazy">
+                <img src="Assets/AWport/AW-03.jpg" alt="Artwork Portfolio — Page 3" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/AWport/AW-04.png" alt="Artwork Portfolio — Page 4" class="carouselSlide" loading = "lazy">
+                <img src="Assets/AWport/AW-04.jpg" alt="Artwork Portfolio — Page 4" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/AWport/AW-05.png" alt="Artwork Portfolio — Page 5" class="carouselSlide" loading = "lazy">
+                <img src="Assets/AWport/AW-05.jpg" alt="Artwork Portfolio — Page 5" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/AWport/AW-06.png" alt="Artwork Portfolio — Page 6" class="carouselSlide" loading = "lazy">
+                <img src="Assets/AWport/AW-06.jpg" alt="Artwork Portfolio — Page 6" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/AWport/AW-07.png" alt="Artwork Portfolio — Page 7" class="carouselSlide" loading = "lazy">
+                <img src="Assets/AWport/AW-07.jpg" alt="Artwork Portfolio — Page 7" class="carouselSlide" loading = "lazy">
 
-                <img src="Assets/AWport/AW-08.png" alt="Artwork Portfolio — Page 8" class="carouselSlide" loading = "lazy">
+                <img src="Assets/AWport/AW-08.jpg" alt="Artwork Portfolio — Page 8" class="carouselSlide" loading = "lazy">
 
                 
 

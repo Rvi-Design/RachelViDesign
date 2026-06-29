@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Chango&family=Cherry+Bomb+One&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Forum&family=Idiqlat:wght@200;300;400&family=Kavoon&family=Nova+Round&family=Questrial&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Chango&family=Cherry+Bomb+One&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Forum&family=Idiqlat:wght@200;300;400&family=Kavoon&family=Khand:wght@300;400;500;600;700&family=Nova+Round&family=Questrial&family=Racing+Sans+One&family=Rubik+Mono+One&display=swap');
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body { font-family: var(--font-sans, system-ui); }
@@ -262,8 +262,7 @@ body { font-family: var(--font-sans, system-ui); }
 
 #card-fp.open {
   border-color: hsla(0, 0%, 0%, 0);
-    /* background-image: linear-gradient(to bottom, #FDEDF0, #FFF8F0, #FDEDF0); */
-    background-color: hsla(346, 81%, 73%, 0.2);
+  background-color: hsla(0, 0%, 100%, 0.2);
 }
 /* ------------My TrAIner----------------- */
 #MyTrainer {
@@ -276,7 +275,7 @@ body { font-family: var(--font-sans, system-ui); }
 }
 #card-mt.open {
   border-color: hsla(0, 0%, 0%, 0);
-    background-color: hsla(240, 35%, 24%, 0.20);
+  background-color: hsla(0, 0%, 100%, 0.2);
 }
 
 /* ----------------TuningFork-------------- */
@@ -291,5 +290,36 @@ body { font-family: var(--font-sans, system-ui); }
 }
 #card-tf.open {
     border-color: hsla(0, 0%, 0%, 0);
-    background-color: hsl(51.96deg 87.42% 81.22% / 30%);
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+/* -----------------FirstPlayer------------- */
+
+#FistPlayer {
+    font-family: "Racing Sans One", sans-serif;
+}
+
+
+#card-tf:hover {
+  border-color: #9A32B7;
+}
+#card-tf.open {
+    border-color: hsla(0, 0%, 0%, 0);
+    background-color:hsla(0, 0%, 100%, 0.2);
+}
+
+/* -----------------Mobile------------------ */
+@media screen and (max-width: 600px) {
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .project-trigger {
+        padding: 1rem;
+        gap: 10px;
+    }
+
+    .project-tags {
+        display: none;
+    }
 }

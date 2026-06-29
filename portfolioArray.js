@@ -148,22 +148,3 @@ const ArtworkArray = [
     },
 ]
 
-// learning along with Dan in Thursday class
-let num1 = 6;
-let num2 = 1;
-let total = num1 + num2;
-console.log(total);
-
-
-function calculateTicketPrice () {
-    let qty = document.querySelector("#quantity").value;
-        qty = Number(qty); //form inputs are always strings, so we need to convert it to a number in order to calculate it. 
-    console.log("Quantity:" +qty);
-
-    // what ticket option was selected
-    let ticketType = document.querySelector("#ticket").value;
-    console.log(ticketType);
-}
-
- document.querySelector("#quantity").addEventListener("change", calculateTicketPrice);
- document.querySelector("#ticket").addEventListener("change", calculateTicketPrice);
